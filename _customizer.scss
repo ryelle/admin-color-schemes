@@ -20,10 +20,7 @@
 	text-decoration: none !important;
 }
 
-.wp-full-overlay-sidebar .wp-full-overlay-header {
-	-webkit-box-shadow: none;
-	box-shadow: none;
-}
+@import "../../../customizer/scss/overlay";
 
 body {
 	overflow: hidden;

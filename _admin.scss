@@ -4,6 +4,12 @@
 @import 'variables';
 
 
+/* Main content background */
+
+html {
+	background: $body-background;
+}
+
 /* Defaults: Links */
 
 a {
@@ -175,6 +181,11 @@ input[type=radio]:checked:before {
 }
 
 
+/* Admin Menu: collapsed */
+#adminmenu .wp-submenu .wp-submenu-head {
+	color: $menu-submenu-text;
+}
+
 /* Admin Bar */
 
 #wpadminbar {
@@ -183,7 +194,10 @@ input[type=radio]:checked:before {
 }
 
 #wpadminbar .ab-item,
-#wpadminbar a.ab-item {
+#wpadminbar a.ab-item,
+#wpadminbar>#wp-toolbar>#wp-admin-bar-root-default span.ab-label, 
+#wpadminbar>#wp-toolbar>#wp-admin-bar-top-secondary span.ab-label, 
+#wpadminbar>#wp-toolbar>#wp-admin-bar-top-secondary span.noticon {
 	color: $menu-text;
 }
 
