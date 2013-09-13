@@ -1,0 +1,11 @@
+{
+	"name"           : "MP6",
+	"slug"           : "mp6",
+	"description"    : "Color Scheme!",
+	"version"        : "0.1.0",
+	"devDependencies": {
+		"grunt"               : "~0.4.1",
+		"grunt-contrib-watch" : "~0.3.1",
+		"grunt-contrib-sass"  : "~0.2.2"
+	}
+}
