@@ -1,6 +1,4 @@
 /* Mixins */
-.wp-full-overlay-sidebar .wp-full-overlay-header { -webkit-box-shadow: none; box-shadow: none; }
-
 body { overflow: hidden; }
 
 #customize-controls a { text-decoration: none; }

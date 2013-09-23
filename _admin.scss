@@ -1,16 +1,13 @@
-// ToDo: Add variable and selectors for body background and text color?
-
 
 @import 'variables';
 
-
-/* Main content background */
 
 html {
 	background: $body-background;
 }
 
-/* Defaults: Links */
+
+/* Links */
 
 a {
 	color: $link;
@@ -22,8 +19,16 @@ a {
 	}
 }
 
+#rightnow a:hover, 
+#media-upload a.del-link:hover, 
+div.dashboard-widget-submit input:hover, 
+.subsubsub a:hover, 
+.subsubsub a.current:hover, 
+.ui-tabs-nav a:hover {
+	color: $link-focus;
+}
 
-/* Defaults: Forms */
+/* Forms */
 
 input[type=checkbox]:checked:before {
     color: $form-checked;
@@ -33,8 +38,12 @@ input[type=radio]:checked:before {
     background: $form-checked;
 }
 
+.wp-core-ui input[type="reset"]:hover, 
+.wp-core-ui input[type="reset"]:active {
+	color: $link-focus;
+}
 
-/* Defaults: Buttons */
+/* Buttons */
 
 .wp-core-ui {
 	.button-primary {
@@ -68,6 +77,40 @@ input[type=radio]:checked:before {
 			text-shadow: none !important;
 		}
 	}
+}
+
+
+/* List tables */
+
+.wrap .add-new-h2:hover, 
+#add-new-comment a:hover,
+.tablenav .tablenav-pages a:hover, 
+.tablenav .tablenav-pages a:focus {
+	color: $menu-text;
+	background-color: $menu-background;
+}
+
+.view-switch a.current:before {
+	color: $menu-background;
+}
+
+.view-switch a:hover:before {
+	color: $menu-bubble-background;
+}
+
+.post-com-count:hover:after {
+	border-top-color: $menu-background;
+}
+.post-com-count:hover span {
+	color: $menu-text;
+	background-color: $menu-background;
+}
+
+strong .post-com-count:after {
+	border-top-color: $menu-bubble-background;
+}
+strong .post-com-count span {
+	background-color: $menu-bubble-background;
 }
 
 
@@ -112,6 +155,10 @@ input[type=radio]:checked:before {
 	border-right-color: $menu-submenu-background;
 }
 
+#adminmenu .wp-submenu .wp-submenu-head {
+	color: $menu-submenu-text;
+}
+
 #adminmenu .wp-submenu a,
 #adminmenu .wp-has-current-submenu .wp-submenu a,
 .folded #adminmenu .wp-has-current-submenu .wp-submenu a {
@@ -132,16 +179,21 @@ input[type=radio]:checked:before {
 	color: $menu-submenu-current-text;
 }
 
+ul#adminmenu a.wp-has-current-submenu:after,
+ul#adminmenu > li.current > a.current:after {
+    border-right-color: $body-background;
+}
+
 #adminmenu li.current a.menu-top,
 #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
 #adminmenu li.wp-has-current-submenu .wp-submenu .wp-submenu-head,
 .folded #adminmenu li.current.menu-top {
-	color: $menu-highlight-text;
-	background: $menu-highlight-background;
+	color: $menu-current-text;
+	background: $menu-current-background;
 }
 
 #adminmenu li.wp-has-current-submenu div.wp-menu-image:before {
-	color: $menu-highlight-icon;
+	color: $menu-current-icon;
 }
 
 
@@ -181,11 +233,6 @@ input[type=radio]:checked:before {
 }
 
 
-/* Admin Menu: collapsed */
-#adminmenu .wp-submenu .wp-submenu-head {
-	color: $menu-submenu-text;
-}
-
 /* Admin Bar */
 
 #wpadminbar {
@@ -195,9 +242,9 @@ input[type=radio]:checked:before {
 
 #wpadminbar .ab-item,
 #wpadminbar a.ab-item,
-#wpadminbar>#wp-toolbar>#wp-admin-bar-root-default span.ab-label, 
-#wpadminbar>#wp-toolbar>#wp-admin-bar-top-secondary span.ab-label, 
-#wpadminbar>#wp-toolbar>#wp-admin-bar-top-secondary span.noticon {
+#wpadminbar > #wp-toolbar > #wp-admin-bar-root-default span.ab-label,
+#wpadminbar > #wp-toolbar > #wp-admin-bar-top-secondary span.ab-label,
+#wpadminbar > #wp-toolbar > #wp-admin-bar-top-secondary span.noticon {
 	color: $menu-text;
 }
 
@@ -208,6 +255,8 @@ input[type=radio]:checked:before {
 
 #wpadminbar .ab-top-menu > li:hover > .ab-item,
 #wpadminbar .ab-top-menu > li.hover > .ab-item,
+#wpadminbar > #wp-toolbar > #wp-admin-bar-root-default li:hover span.ab-label,
+#wpadminbar > #wp-toolbar > #wp-admin-bar-top-secondary li.hover span.ab-label,
 #wpadminbar .ab-top-menu > li > .ab-item:focus,
 #wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus,
 #wpadminbar-nojs .ab-top-menu > li.menupop:hover > .ab-item,
@@ -264,21 +313,22 @@ input[type=radio]:checked:before {
 	color: $menu-icon;
 }
 
-#wpadminbar #adminbarsearch .adminbar-input:focus {
+#wpadminbar > #wp-toolbar > #wp-admin-bar-top-secondary > #wp-admin-bar-search #adminbarsearch input.adminbar-input:focus {
 	color: $menu-text;
-	background: $menu-submenu-background;
+	background: $adminbar-input-background;
 }
 
-#wpadminbar #adminbarsearch .adminbar-input::-webkit-input-placeholder { color: $menu-icon; }
-#wpadminbar #adminbarsearch .adminbar-input:-moz-placeholder { color: $menu-icon; }
-#wpadminbar #adminbarsearch .adminbar-input::-moz-placeholder { color: $menu-icon; }
-#wpadminbar #adminbarsearch .adminbar-input:-ms-input-placeholder { color: $menu-icon; }
+#wpadminbar #adminbarsearch .adminbar-input::-webkit-input-placeholder { color: $menu-text; opacity: .7; }
+#wpadminbar #adminbarsearch .adminbar-input:-moz-placeholder { color: $menu-text; opacity: .7; }
+#wpadminbar #adminbarsearch .adminbar-input::-moz-placeholder { color: $menu-text; opacity: .7; }
+#wpadminbar #adminbarsearch .adminbar-input:-ms-input-placeholder { color: $menu-text; opacity: .7; }
 
 
 /* Admin Bar: my account */
 
 #wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar > a img {
-	border-color: $menu-avatar-frame;
+	border-color: $adminbar-avatar-frame;
+	background-color: $adminbar-avatar-frame;
 }
 
 #wpadminbar #wp-admin-bar-user-info .display-name {
