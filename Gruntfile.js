@@ -14,8 +14,14 @@ module.exports = function(grunt) {
           'sunset/admin-colors.css': ['sunset/colors.scss', '_admin.scss'],
           'sunset/customizer.css'  : ['sunset/colors.scss', '_customizer.scss'],
 
-          'navy/admin-colors.css': ['navy/colors.scss', '_admin.scss'],
-          'navy/customizer.css'  : ['navy/colors.scss', '_customizer.scss'],
+          'midnight/admin-colors.css': ['midnight/colors.scss', '_admin.scss'],
+          'midnight/customizer.css'  : ['midnight/colors.scss', '_customizer.scss'],
+
+          'vineyard/admin-colors.css': ['vineyard/colors.scss', '_admin.scss'],
+          'vineyard/customizer.css'  : ['vineyard/colors.scss', '_customizer.scss'],
+
+          'primary/admin-colors.css': ['primary/colors.scss', '_admin.scss'],
+          'primary/customizer.css'  : ['primary/colors.scss', '_customizer.scss'],
         }]
       }
     },

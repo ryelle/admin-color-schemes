@@ -19,7 +19,7 @@ function kd_mp6_add_colors() {
 			'customizer_url'  => plugins_url( "sunset/customizer.css", __FILE__ ),
 		) );
 		
-		mp6_add_admin_colors( 'navy', array(
+		mp6_add_admin_colors( 'midnight', array(
 			'label' => 'Midnight',
 			'palette' => array( '#25282b', '#363b3f', '#69a8bb', '#e14d43' ),
 			'icon' => array( 'base' => '#f1f2f3', 'focus' => '#fff', 'current' => '#fff' ),
@@ -27,6 +27,26 @@ function kd_mp6_add_colors() {
 			'admin_url'  => plugins_url( "midnight/admin-colors.css", __FILE__ ),
 			'customizer_path' => plugin_dir_path( __FILE__ ) . "midnight/customizer.css",
 			'customizer_url'  => plugins_url( "midnight/customizer.css", __FILE__ ),
+		) );
+
+		mp6_add_admin_colors( 'vineyard', array(
+			'label' => 'Vineyard',
+			'palette' => array( '#301D25', '#462b36', '#d3995d', '#eabe3f' ),
+			'icon' => array( 'base' => '#f1f2f3', 'focus' => '#fff', 'current' => '#fff' ),
+			'admin_path' => plugin_dir_path( __FILE__ ) . "vineyard/admin-colors.css",
+			'admin_url'  => plugins_url( "vineyard/admin-colors.css", __FILE__ ),
+			'customizer_path' => plugin_dir_path( __FILE__ ) . "vineyard/customizer.css",
+			'customizer_url'  => plugins_url( "vineyard/customizer.css", __FILE__ ),
+		) );
+
+		mp6_add_admin_colors( 'primary', array(
+			'label' => 'Primary',
+			'palette' => array( '#282b48', '#35395c', '#f38135', '#e7c03a' ),
+			'icon' => array( 'base' => '#f1f2f3', 'focus' => '#fff', 'current' => '#fff' ),
+			'admin_path' => plugin_dir_path( __FILE__ ) . "primary/admin-colors.css",
+			'admin_url'  => plugins_url( "primary/admin-colors.css", __FILE__ ),
+			'customizer_path' => plugin_dir_path( __FILE__ ) . "primary/customizer.css",
+			'customizer_url'  => plugins_url( "primary/customizer.css", __FILE__ ),
 		) );
 	}
 }
