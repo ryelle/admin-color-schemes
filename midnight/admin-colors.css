@@ -41,7 +41,7 @@ strong .post-com-count span { background-color: #69a8bb; }
 
 #adminmenu div.wp-menu-image:before { color: #f1f2f3; }
 
-#adminmenu a:hover, #adminmenu li.menu-top:hover, #adminmenu li.opensub > a.menu-top { color: white; background-color: #e14d43; }
+#adminmenu a:hover, #adminmenu li.menu-top:hover, #adminmenu li.opensub > a.menu-top, #adminmenu li > a.menu-top:focus { color: white; background-color: #e14d43; }
 
 #adminmenu li.menu-top:hover div.wp-menu-image:before, #adminmenu li.opensub > a.menu-top div.wp-menu-image:before { color: white; }
 

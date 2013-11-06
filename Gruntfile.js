@@ -11,17 +11,10 @@ module.exports = function(grunt) {
       	  lineNumbers: false,
       	},
         files: [{
-          'sunset/admin-colors.css': ['sunset/colors.scss', '_admin.scss'],
-          'sunset/customizer.css'  : ['sunset/colors.scss', '_customizer.scss'],
-
-          'midnight/admin-colors.css': ['midnight/colors.scss', '_admin.scss'],
-          'midnight/customizer.css'  : ['midnight/colors.scss', '_customizer.scss'],
-
-          'vineyard/admin-colors.css': ['vineyard/colors.scss', '_admin.scss'],
-          'vineyard/customizer.css'  : ['vineyard/colors.scss', '_customizer.scss'],
-
-          'primary/admin-colors.css': ['primary/colors.scss', '_admin.scss'],
-          'primary/customizer.css'  : ['primary/colors.scss', '_customizer.scss'],
+          'sunset/admin-colors.css'  : 'sunset/colors.scss',
+          'midnight/admin-colors.css': 'midnight/colors.scss',
+          'vineyard/admin-colors.css': 'vineyard/colors.scss',
+          'primary/admin-colors.css' : 'primary/colors.scss'
         }]
       }
     },

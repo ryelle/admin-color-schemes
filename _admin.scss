@@ -131,7 +131,8 @@ strong .post-com-count span {
 
 #adminmenu a:hover,
 #adminmenu li.menu-top:hover,
-#adminmenu li.opensub > a.menu-top {
+#adminmenu li.opensub > a.menu-top,
+#adminmenu li > a.menu-top:focus {
 	color: $menu-highlight-text;
 	background-color: $menu-highlight-background;
 }
