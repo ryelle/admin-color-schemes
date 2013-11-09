@@ -32,6 +32,22 @@ function kd_mp6_add_colors() {
 			'admin_path' => plugin_dir_path( __FILE__ ) . "primary/admin-colors.css",
 			'admin_url'  => plugins_url( "primary/admin-colors.css", __FILE__ ),
 		) );
+
+		mp6_add_admin_colors( 'mint', array(
+			'label' => 'Mint',
+			'palette' => array( '#4f6d59', '#33834e', '#5FB37C', '#81c498' ),
+			'icon' => array( 'base' => '#f1f3f2', 'focus' => '#fff', 'current' => '#fff' ),
+			'admin_path' => plugin_dir_path( __FILE__ ) . "primary/admin-colors.css",
+			'admin_url'  => plugins_url( "mint/admin-colors.css", __FILE__ ),
+		) );
+		
+		mp6_add_admin_colors( 'evergreen', array(
+			'label' => 'Evergreen',
+			'palette' => array( '#324d3a', '#446950', '#56b274', '#324d3a' ),
+			'icon' => array( 'base' => '#f1f3f2', 'focus' => '#fff', 'current' => '#fff' ),
+			'admin_path' => plugin_dir_path( __FILE__ ) . "primary/admin-colors.css",
+			'admin_url'  => plugins_url( "evergreen/admin-colors.css", __FILE__ ),
+		) );
 	}
 }
 add_action( 'admin_init' , 'kd_mp6_add_colors', 7 );
