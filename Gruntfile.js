@@ -1,38 +1,47 @@
 module.exports = function(grunt) {
 
-  // Project configuration.
-  grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
+	require('matchdep').filterDev('grunt-*').forEach( grunt.loadNpmTasks );
 
-    sass: {
-      colors: {
-      	options: {
-      	  style: 'compact',
-      	  lineNumbers: false,
-      	},
-        files: [{
-          'sunset/admin-colors.css'   : 'sunset/colors.scss',
-          'vineyard/admin-colors.css' : 'vineyard/colors.scss',
-          'primary/admin-colors.css'  : 'primary/colors.scss',
-          'mint/admin-colors.css'     : 'mint/colors.scss',
-          'evergreen/admin-colors.css': 'evergreen/colors.scss'
-        }]
-      }
-    },
+	// Project configuration.
+	grunt.initConfig({
+		pkg: grunt.file.readJSON('package.json'),
 
-    watch: {
-      sass: {
-        files: ['**/*.scss', ],
-        tasks: ['sass:colors']
-      }
-    }
+		sass: {
+			colors: {
+				options: {
+					style: 'compact',
+					lineNumbers: false,
+				},
+				files: [{
+					'sunset/colors.css'   : 'sunset/colors.scss',
+					'vineyard/colors.css' : 'vineyard/colors.scss',
+					'primary/colors.css'  : 'primary/colors.scss',
+					'mint/colors.css'     : 'mint/colors.scss',
+					'evergreen/colors.css': 'evergreen/colors.scss'
+				}]
+			}
+		},
+		cssjanus: {
+			colors: {
+				expand: true,
+				cwd: '.',
+				dest: '.',
+				ext: '-rtl.css',
+				src: [
+					'*/colors.css'
+				]
+			}
+		},
+		watch: {
+			sass: {
+				files: ['**/*.scss', ],
+				tasks: ['sass:colors', 'cssjanus:colors']
+			}
+		}
 
-  });
+	});
 
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-
-  // Default task(s).
-  grunt.registerTask('default', ['sass']);
+	// Default task(s).
+	grunt.registerTask('default', ['sass','cssjanus']);
 
 };

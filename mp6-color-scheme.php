@@ -10,35 +10,35 @@
 function admin_schemes_add_colors() {
 	wp_admin_css_color( 
 		'sunset', __( 'Sunset', 'admin_schemes' ), 
-		plugins_url( "sunset/admin-colors.css", __FILE__ ),
+		plugins_url( "sunset/colors.css", __FILE__ ),
 		array( '#b43c38', '#cf4944', '#dd823b', '#ccaf0b' ), 
 		array( 'base' => '#f3f1f1', 'focus' => '#fff', 'current' => '#fff' )
 	);
 
 	wp_admin_css_color( 
 		'vinyard', __( 'Vinyard', 'admin_schemes' ), 
-		plugins_url( "vineyard/admin-colors.css", __FILE__ ),
+		plugins_url( "vineyard/colors.css", __FILE__ ),
 		array( '#301D25', '#462b36', '#d3995d', '#eabe3f' ), 
 		array( 'base' => '#f1f2f3', 'focus' => '#fff', 'current' => '#fff' )
 	);
 
 	wp_admin_css_color( 
 		'primary', __( 'Primary', 'admin_schemes' ), 
-		plugins_url( "primary/admin-colors.css", __FILE__ ),
+		plugins_url( "primary/colors.css", __FILE__ ),
 		array( '#282b48', '#35395c', '#f38135', '#e7c03a' ),
 		array( 'base' => '#f1f2f3', 'focus' => '#fff', 'current' => '#fff' )
 	);
 
 	wp_admin_css_color( 
 		'mint', __( 'Mint', 'admin_schemes' ), 
-		plugins_url( "mint/admin-colors.css", __FILE__ ),
+		plugins_url( "mint/colors.css", __FILE__ ),
 		array( '#4f6d59', '#33834e', '#5FB37C', '#81c498' ),
 		array( 'base' => '#f1f3f2', 'focus' => '#fff', 'current' => '#fff' )
 	);
 
 	wp_admin_css_color( 
 		'evergreen', __( 'Evergreen', 'admin_schemes' ), 
-		plugins_url( "evergreen/admin-colors.css", __FILE__ ),
+		plugins_url( "evergreen/colors.css", __FILE__ ),
 		array( '#324d3a', '#446950', '#56b274', '#324d3a' ),
 		array( 'base' => '#f1f3f2', 'focus' => '#fff', 'current' => '#fff' )
 	);
@@ -58,6 +58,7 @@ function admin_schemes_load_mp6_default_css() {
 	if ( $color_scheme == 'fresh' )
 		return;
 
+	// Need to enqueue the RTL version of 'colors-fresh' to get things pointing the right way, see #26316
 	$wp_styles->registered[ 'colors' ]->deps[] = 'colors-fresh';
 
 }
