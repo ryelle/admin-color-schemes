@@ -45,7 +45,6 @@ class ACS_Color_Schemes {
 
 	function __construct() {
 		add_action( 'admin_enqueue_scripts', array( $this, 'load_default_css' ) );
-		add_action( 'customize_controls_print_scripts', array( $this, 'load_default_css' ), 1 );
 		add_action( 'admin_init' , array( $this, 'add_colors' ) );
 	}
 
