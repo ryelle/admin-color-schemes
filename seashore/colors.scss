@@ -1,0 +1,20 @@
+$base-color: desaturate( #ece2ba, 25% );
+$text-color: desaturate( #73340f, 50% );
+$icon-color: $text-color;
+
+$highlight-color: #456a7f;
+$notification-color: #456a7f;
+$action-color: #5d824b;
+
+$body-background: lighten( $base-color, 13% );
+
+$menu-highlight-text: $body-background;
+$menu-highlight-icon: $body-background;
+
+$menu-bubble-background: #73340f;
+$menu-bubble-text: $menu-highlight-text;
+
+$menu-collapse-focus-text: $highlight-color;
+$menu-collapse-focus-icon: $highlight-color;
+
+@import "../admin";

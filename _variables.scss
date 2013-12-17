@@ -8,16 +8,16 @@ $base-color: #222 !default;
 $icon-color: hsl( hue( $base-color ), 7%, 95% ) !default;
 $highlight-color: #0074a2 !default;
 $notification-color: #d54e21 !default;
-
+$action-color: $highlight-color !default;
 
 // global
 
-$body-background: #eee !default;
+$body-background: #f3f3f3 !default;
 
 $link: #0074a2 !default;
 $link-focus: lighten( $link, 10% ) !default;
 
-$button-color: $highlight-color !default;
+$button-color: $action-color !default;
 $form-checked: $highlight-color !default;
 
 

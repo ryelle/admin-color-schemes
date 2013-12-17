@@ -12,13 +12,13 @@ module.exports = function(grunt) {
 					style: 'compact',
 					lineNumbers: false,
 				},
-				files: [{
-					'sunset/colors.css'   : 'sunset/colors.scss',
-					'vineyard/colors.css' : 'vineyard/colors.scss',
-					'primary/colors.css'  : 'primary/colors.scss',
-					'mint/colors.css'     : 'mint/colors.scss',
-					'evergreen/colors.css': 'evergreen/colors.scss'
-				}]
+				expand: true,
+				cwd: '.',
+				dest: '.',
+				ext: '.css',
+				src: [
+					'*/colors.scss'
+				]
 			}
 		},
 		cssjanus: {
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 		watch: {
 			sass: {
 				files: ['**/*.scss', ],
-				tasks: ['sass:colors', 'cssjanus:colors']
+				tasks: ['sass:colors']
 			}
 		}
 

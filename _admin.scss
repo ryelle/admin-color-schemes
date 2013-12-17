@@ -1,5 +1,7 @@
-@import 'mixins';
+
 @import 'variables';
+@import 'mixins';
+
 
 html {
 	background: $body-background;
@@ -142,6 +144,15 @@ strong .post-com-count span {
 #adminmenu li.menu-top:hover div.wp-menu-image:before,
 #adminmenu li.opensub > a.menu-top div.wp-menu-image:before {
 	color: $menu-highlight-icon;
+}
+
+
+/* Active tabs use a bottom border color that matches the page background color. */
+
+.about-wrap h2 .nav-tab-active,
+.nav-tab-active,
+.nav-tab-active:hover {
+	border-bottom-color: $body-background;
 }
 
 
@@ -377,6 +388,10 @@ ul#adminmenu > li.current > a.current:after {
 
 .wp-pointer .wp-pointer-content h3 {
 	background-color: $highlight-color;
+}
+
+.wp-pointer .wp-pointer-content h3:before {
+	color: $highlight-color;
 }
 
 .wp-pointer.wp-pointer-top .wp-pointer-arrow,
