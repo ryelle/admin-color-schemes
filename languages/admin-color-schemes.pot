@@ -1,0 +1,65 @@
+# Copyright (C) 2010 Admin Color Schemes
+# This file is distributed under the same license as the Admin Color Schemes package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Admin Color Schemes 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/admin-color-schemes\n"
+"POT-Creation-Date: 2014-01-03 23:19:24+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: admin-color-schemes.php:59
+msgid "Vinyard"
+msgstr ""
+
+#: admin-color-schemes.php:66
+msgid "Primary"
+msgstr ""
+
+#: admin-color-schemes.php:73
+msgid "80's Kid"
+msgstr ""
+
+#: admin-color-schemes.php:80
+msgid "Aubergine"
+msgstr ""
+
+#: admin-color-schemes.php:87
+msgid "Cruise"
+msgstr ""
+
+#: admin-color-schemes.php:94
+msgid "Flat"
+msgstr ""
+
+#: admin-color-schemes.php:101
+msgid "Lawn"
+msgstr ""
+
+#: admin-color-schemes.php:108
+msgid "Seashore"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Admin Color Schemes"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/plugins/admin-color-schemes/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Even more admin color schemes"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "WordPress Core Team"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://wordpress.org/"
+msgstr ""
