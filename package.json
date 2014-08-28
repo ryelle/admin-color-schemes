@@ -8,6 +8,6 @@
 		"grunt-contrib-watch" : "~0.3.1",
 		"grunt-contrib-sass"  : "~0.2.2",
 		"grunt-cssjanus": "git://github.com/yoavf/grunt-cssjanus.git#e0158f4087d1c4bb5a8d1648a63ef133338b5879",
-	    "matchdep": "~0.1.2"
+		"matchdep": "~0.1.2"
 	}
 }
