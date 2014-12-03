@@ -145,11 +145,9 @@ ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu > li.current > a.curre
 
 .wp-pointer .wp-pointer-content h3:before { color: #1abc9c; }
 
-.wp-pointer.wp-pointer-top .wp-pointer-arrow, .wp-pointer.wp-pointer-undefined .wp-pointer-arrow { border-bottom-color: #1abc9c; }
+.wp-pointer.wp-pointer-top .wp-pointer-arrow, .wp-pointer.wp-pointer-top .wp-pointer-arrow-inner, .wp-pointer.wp-pointer-undefined .wp-pointer-arrow, .wp-pointer.wp-pointer-undefined .wp-pointer-arrow-inner { border-bottom-color: #1abc9c; }
 
 /* Media */
-.media-modal-close:hover .media-modal-icon:before, .edit-attachment-frame .edit-media-header .right:hover, .edit-attachment-frame .edit-media-header .left:hover { color: #0099d5; }
-
 .media-item .bar, .media-progress-bar div { background-color: #1abc9c; }
 
 .details.attachment { box-shadow: inset 0 0 0 3px white, inset 0 0 0 7px #1abc9c; }
@@ -163,8 +161,6 @@ ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu > li.current > a.curre
 
 .theme-browser .theme.add-new-theme:hover span:after { color: #1abc9c; }
 
-.theme-overlay .theme-header .close:hover, .theme-overlay .theme-header .right:hover, .theme-overlay .theme-header .left:hover { color: #0099d5; }
-
 .theme-section.current, .theme-filter.current { border-bottom-color: #2c3e50; }
 
 body.more-filters-opened .more-filters { color: white; background-color: #2c3e50; }
@@ -175,8 +171,6 @@ body.more-filters-opened .more-filters:hover, body.more-filters-opened .more-fil
 
 body.more-filters-opened .more-filters:hover:before, body.more-filters-opened .more-filters:focus:before { color: white; }
 
-.theme-install-overlay .close-full-overlay:hover, .theme-install-overlay .close-full-overlay:focus, .theme-install-overlay .previous-theme:hover, .theme-install-overlay .previous-theme:focus, .theme-install-overlay .next-theme:hover, .theme-install-overlay .next-theme:focus { color: #0099d5; }
-
 /* Widgets */
 .widgets-chooser li.widgets-chooser-selected { background-color: #1abc9c; color: white; }
 
@@ -184,8 +178,6 @@ body.more-filters-opened .more-filters:hover:before, body.more-filters-opened .m
 
 /* Customize */
 #customize-theme-controls .widget-area-select .selected { background-color: #1abc9c; color: white; }
-
-.customize-controls-close:focus, .customize-controls-close:hover, .control-panel-back:focus, .control-panel-back:hover { color: #0099d5; }
 
 /* jQuery UI Slider */
 .wp-slider .ui-slider-handle, .wp-slider .ui-slider-handle.ui-state-hover, .wp-slider .ui-slider-handle.focus { background: #f39c12; border-color: #c87f0a; box-shadow: inset 0 1px 0 #f7ba5b, 0 1px 0 rgba(0, 0, 0, 0.15); }
