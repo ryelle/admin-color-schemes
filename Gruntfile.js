@@ -10,7 +10,8 @@ module.exports = function(grunt) {
 			colors: {
 				options: {
 					style: 'compact',
-					lineNumbers: false,
+					noCache: true,
+					sourcemap: false
 				},
 				expand: true,
 				cwd: '.',
@@ -21,17 +22,19 @@ module.exports = function(grunt) {
 				]
 			}
 		},
-		cssjanus: {
+
+		rtlcss: {
 			colors: {
 				expand: true,
 				cwd: '.',
 				dest: '.',
 				ext: '-rtl.css',
 				src: [
-					'*/colors.css'
+					'./*/colors.css'
 				]
 			}
 		},
+
 		watch: {
 			sass: {
 				files: ['**/*.scss', ],
@@ -42,6 +45,6 @@ module.exports = function(grunt) {
 	});
 
 	// Default task(s).
-	grunt.registerTask('default', ['sass','cssjanus']);
+	grunt.registerTask('default', ['sass','rtlcss']);
 
 };

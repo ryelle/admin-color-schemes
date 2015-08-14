@@ -1,13 +1,13 @@
 {
-	"name"           : "MP6",
-	"slug"           : "mp6",
-	"description"    : "Color Scheme!",
+	"name"           : "Admin-Color-Schemes",
+	"slug"           : "admin-color-schemes",
+	"description"    : "WordPress dashboard color schemes",
 	"version"        : "0.1.0",
 	"devDependencies": {
 		"grunt"               : "~0.4.1",
-		"grunt-contrib-watch" : "~0.3.1",
-		"grunt-contrib-sass"  : "~0.2.2",
-		"grunt-cssjanus": "git://github.com/yoavf/grunt-cssjanus.git#e0158f4087d1c4bb5a8d1648a63ef133338b5879",
-		"matchdep": "~0.1.2"
+		"grunt-contrib-watch" : "~0.6.1",
+		"grunt-contrib-sass"  : "~0.9.2",
+		"grunt-rtlcss": "~1.6.0",
+		"matchdep": "~0.3.0"
 	}
 }
