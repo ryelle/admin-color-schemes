@@ -1,7 +1,7 @@
 === Admin Color Schemes ===
 Contributors: wordpressdotorg, ryelle, melchoyce, drw158, littlethingsstudio
 Requires at least: 3.8
-Tested up to: 3.8
+Tested up to: 4.3
 Stable tag: trunk
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
