@@ -26,6 +26,11 @@ Color schemes in this pack designed by Kate Whitley, Dave Whitley, Mel Choyce, a
 
 == Changelog ==
 
+2.1
+
+* Update Sass files to match 4.3 core changes: touch & keyboard focus styles for admin bar, TinyMCE buttons, remove thickbox plugin styles.
+* Update grunt tasks & packages.
+
 2.0
 
 * Update Sass files to match 4.1 core changes: Adds support for new elements, and fixes publish button's color-flash on save.
