@@ -1,7 +1,7 @@
 === Admin Color Schemes ===
 Contributors: wordpressdotorg, ryelle, melchoyce, drw158, littlethingsstudio
 Requires at least: 3.8
-Tested up to: 4.3
+Tested up to: 4.4
 Stable tag: trunk
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -25,6 +25,10 @@ Color schemes in this pack designed by Kate Whitley, Dave Whitley, Mel Choyce, a
 4. All your awesome color choices
 
 == Changelog ==
+
+2.2
+
+* Update Sass files to match 4.4 core changes: new button styles, remove jQuery UI styles, more updates to menu focus styles.
 
 2.1
 
