@@ -1,3 +1,5 @@
+const sass = require('node-sass');
+
 module.exports = function(grunt) {
 
 	require('matchdep').filterDev('grunt-*').forEach( grunt.loadNpmTasks );
@@ -7,9 +9,12 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		sass: {
+			options: {
+				implementation: sass,
+			},
 			colors: {
 				options: {
-					style: 'compact',
+					outputStyle: 'compact',
 					noCache: true,
 					sourcemap: false
 				},

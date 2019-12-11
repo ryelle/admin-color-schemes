@@ -1,13 +1,14 @@
 {
-	"name"           : "Admin-Color-Schemes",
-	"slug"           : "admin-color-schemes",
-	"description"    : "WordPress dashboard color schemes",
-	"version"        : "0.1.0",
+	"name": "Admin-Color-Schemes",
+	"slug": "admin-color-schemes",
+	"description": "WordPress dashboard color schemes",
+	"version": "0.1.0",
 	"devDependencies": {
-		"grunt"               : "~0.4.1",
-		"grunt-contrib-watch" : "~0.6.1",
-		"grunt-contrib-sass"  : "~0.9.2",
-		"grunt-rtlcss": "~1.6.0",
-		"matchdep": "~0.3.0"
+		"grunt": "1.0.4",
+		"grunt-contrib-watch": "1.1.0",
+		"grunt-rtlcss": "2.0.2",
+		"grunt-sass": "3.1.0",
+		"matchdep": "2.0.0",
+		"node-sass": "4.13.0"
 	}
 }
