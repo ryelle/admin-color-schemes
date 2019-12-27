@@ -26,7 +26,9 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="color"]:focu
 
 .wp-core-ui .button:active { border-color: #7e8993; color: #262a2e; box-shadow: none; }
 
-.wp-core-ui .button.active, .wp-core-ui .button.active:focus, .wp-core-ui .button.active:hover { border-color: #3c5c6e; color: #423126; box-shadow: inset 0 2px 5px -3px #3c5c6e; }
+.wp-core-ui .button.active, .wp-core-ui .button.active:focus, .wp-core-ui .button.active:hover { border-color: #456a7f; color: #262a2e; box-shadow: inset 0 2px 5px -3px #456a7f; }
+
+.wp-core-ui .button.active:focus { box-shadow: 0 0 0 1px #32373c; }
 
 .wp-core-ui .button-primary { background: #456a7f; border-color: #456a7f; color: #fff; }
 
