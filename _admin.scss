@@ -70,7 +70,6 @@ textarea:focus {
 	box-shadow: 0 0 0 1px $highlight-color;
 }
 
-
 /* Core UI */
 
 .wp-core-ui {
@@ -147,6 +146,12 @@ textarea:focus {
 
 	.wp-ui-text-icon {
 		color: $menu-icon;
+	}
+
+	select:focus {
+		border-color: $highlight-color;
+		color: currentColor;
+		box-shadow: 0 0 0 1px darken( $button-color, 10% );
 	}
 }
 

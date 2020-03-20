@@ -58,6 +58,8 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="color"]:focu
 
 .wp-core-ui .wp-ui-text-icon { color: #f1f3f3; }
 
+.wp-core-ui select:focus { border-color: #a7b145; color: currentColor; box-shadow: 0 0 0 1px #848c37; }
+
 /* List tables */
 .wrap .add-new-h2:hover, .wrap .page-title-action:hover { color: #fff; background-color: #1e2a29; }
 
