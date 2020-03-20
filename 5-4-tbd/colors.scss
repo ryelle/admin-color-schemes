@@ -1,0 +1,56 @@
+$base-color: #216bce;
+$highlight-color: #1730e5;
+$notification-color: #bde7f0;
+
+$menu-submenu-focus-text: $notification-color;
+
+$menu-bubble-text: $base-color;
+$menu-bubble-current-background: $notification-color;
+$menu-bubble-current-text: $base-color;
+
+$form-checked: #216bce;
+
+@import "../admin";
+
+/**
+ * There's not enough contrast between regular submenu items & hovered items,
+ * so we'll add an underline here.
+ */
+
+#adminmenu .wp-submenu a,
+#adminmenu .wp-has-current-submenu .wp-submenu a,
+.folded #adminmenu .wp-has-current-submenu .wp-submenu a,
+#adminmenu a.wp-has-current-submenu:focus + .wp-submenu a,
+#adminmenu .wp-has-current-submenu.opensub .wp-submenu a {
+
+	&:focus,
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+#adminmenu .wp-submenu li.current a,
+#adminmenu a.wp-has-current-submenu:focus + .wp-submenu li.current a,
+#adminmenu .wp-has-current-submenu.opensub .wp-submenu li.current a {
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}
+
+#wpadminbar .quicklinks .menupop ul li a:hover,
+#wpadminbar .quicklinks .menupop ul li a:focus,
+#wpadminbar .quicklinks .menupop ul li a:hover strong,
+#wpadminbar .quicklinks .menupop ul li a:focus strong,
+#wpadminbar .quicklinks .ab-sub-wrapper .menupop.hover > a,
+#wpadminbar .quicklinks .menupop.hover ul li a:hover,
+#wpadminbar .quicklinks .menupop.hover ul li a:focus,
+#wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover,
+#wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus,
+#wpadminbar .quicklinks li a:hover .blavatar,
+#wpadminbar .quicklinks li a:focus .blavatar,
+#wpadminbar .quicklinks .ab-sub-wrapper .menupop.hover > a .blavatar,
+#wpadminbar #wp-admin-bar-user-info a:hover .display-name {
+	text-decoration: underline;
+}

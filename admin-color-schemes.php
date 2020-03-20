@@ -145,6 +145,18 @@ function add_colors() {
 			'current' => '#fff',
 		)
 	);
+
+	wp_admin_css_color(
+		'5-4-tbd',
+		__( '5.4 TBD', 'admin-color-schemes' ),
+		plugins_url( "5-4-tbd/colors$suffix.css", __FILE__ ),
+		array( '#bde7f0', '#216bce', '#1730e5' ),
+		array(
+			'base' => '#f1f3f3',
+			'focus' => '#fff',
+			'current' => '#fff',
+		)
+	);
 }
 
 add_action( 'admin_init', __NAMESPACE__ . '\add_colors' );
