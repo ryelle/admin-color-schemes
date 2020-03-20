@@ -158,12 +158,6 @@ textarea:focus {
 
 /* List tables */
 
-.wrap .add-new-h2:hover, /* deprecated */
-.wrap .page-title-action:hover {
-	color: $menu-text;
-	background-color: $menu-background;
-}
-
 .view-switch a.current:before {
 	color: $menu-background;
 }
