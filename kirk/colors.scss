@@ -1,0 +1,18 @@
+$base-color: #5f1b29;
+$highlight-color: #bd3854;
+$notification-color: #bd3854;
+
+$icon-color: #fefcf7;
+$menu-highlight-icon: $icon-color;
+$menu-current-icon: $icon-color;
+
+$menu-bubble-text: #fefcf7;
+$menu-bubble-current-background: #5f1b29;
+$menu-bubble-current-text: $menu-bubble-text;
+
+$menu-submenu-background: #340f18;
+$menu-submenu-background-alt: mix(#340f18, #5f1b29, 60%);
+
+$form-checked: #5f1b29;
+
+@import "../admin";

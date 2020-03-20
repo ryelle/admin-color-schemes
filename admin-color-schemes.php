@@ -133,6 +133,18 @@ function add_colors() {
 			'current' => '#F8F6F1',
 		)
 	);
+
+	wp_admin_css_color(
+		'kirk',
+		__( 'Kirk', 'admin_schemes' ),
+		plugins_url( "kirk/colors$suffix.css", __FILE__ ),
+		array( '#bd3854', '#5f1b29', '#321017' ),
+		array(
+			'base' => '#fefcf7',
+			'focus' => '#fff',
+			'current' => '#fff',
+		)
+	);
 }
 
 add_action( 'admin_init', __NAMESPACE__ . '\add_colors' );
