@@ -10,7 +10,7 @@ Bring some personality to your WordPress site with extra admin color schemes
 
 == Description ==
 
-8 new color schemes for your admin.
+9 new color schemes for your admin.
 
 Color schemes in this pack designed by Kate Whitley, Dave Whitley, Mel Choyce, and Kelly Dwan.
 
@@ -28,6 +28,7 @@ Color schemes in this pack designed by Kate Whitley, Dave Whitley, Mel Choyce, a
 
 2.3
 
+* Add new "Kirk" theme, inspired by the WordPress 5.3 release art.
 * Update Sass files to match 5.4 core changes.
 * Remove unused variable `$action-color`.
 * Developer improvements: Convert to namespace to remove global class; add `stylelint` for color sass files.
