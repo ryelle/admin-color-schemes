@@ -1,11 +1,11 @@
-$base-color: desaturate( #ece2ba, 25% );
-$text-color: desaturate( #73340f, 50% );
+$base-color: desaturate(#ece2ba, 25%);
+$text-color: desaturate(#73340f, 50%);
 $icon-color: $text-color;
 
 $highlight-color: #456a7f;
 $notification-color: #456a7f;
 
-$body-background: lighten( $base-color, 13% );
+$body-background: lighten($base-color, 13%);
 
 $menu-highlight-text: $body-background;
 $menu-highlight-icon: $body-background;
