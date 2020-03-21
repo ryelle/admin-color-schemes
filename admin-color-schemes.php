@@ -145,6 +145,18 @@ function add_colors() {
 			'current' => '#fff',
 		)
 	);
+
+	wp_admin_css_color(
+		'contrast-blue',
+		__( 'High Contrast Blue', 'admin_schemes' ),
+		plugins_url( "contrast-blue/colors$suffix.css", __FILE__ ),
+		array( '#22466d', '#5c98c8', '#a5cde8', '#dae9f3', '#9d2f4d' ),
+		array(
+			'base' => '#fefcf7',
+			'focus' => '#fff',
+			'current' => '#fff',
+		)
+	);
 }
 
 add_action( 'admin_init', __NAMESPACE__ . '\add_colors' );
