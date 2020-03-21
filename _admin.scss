@@ -113,7 +113,7 @@ textarea:focus {
 	}
 
 	.button-primary {
-		@include button( $button-color );
+		@include button( $button-color, $button-text-color );
 	}
 
 	.button-group > .button.active {

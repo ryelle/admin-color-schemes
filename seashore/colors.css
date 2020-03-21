@@ -30,15 +30,15 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="color"]:focu
 
 .wp-core-ui .button.active:focus { box-shadow: 0 0 0 1px #32373c; }
 
-.wp-core-ui .button-primary { background: #456a7f; border-color: #456a7f; color: #fff; }
+.wp-core-ui .button-primary { background: #456a7f; border-color: #456a7f; color: #f8f6f1; }
 
-.wp-core-ui .button-primary:hover, .wp-core-ui .button-primary:focus { background: #4a7289; border-color: #406275; color: #fff; }
+.wp-core-ui .button-primary:hover, .wp-core-ui .button-primary:focus { background: #4a7289; border-color: #406275; color: #f8f6f1; }
 
 .wp-core-ui .button-primary:focus { box-shadow: 0 0 0 1px #fff, 0 0 0 3px #456a7f; }
 
-.wp-core-ui .button-primary:active { background: #3c5c6e; border-color: #3c5c6e; color: #fff; }
+.wp-core-ui .button-primary:active { background: #3c5c6e; border-color: #3c5c6e; color: #f8f6f1; }
 
-.wp-core-ui .button-primary.active, .wp-core-ui .button-primary.active:focus, .wp-core-ui .button-primary.active:hover { background: #456a7f; color: #fff; border-color: #2a414d; box-shadow: inset 0 2px 5px -3px black; }
+.wp-core-ui .button-primary.active, .wp-core-ui .button-primary.active:focus, .wp-core-ui .button-primary.active:hover { background: #456a7f; color: #f8f6f1; border-color: #2a414d; box-shadow: inset 0 2px 5px -3px black; }
 
 .wp-core-ui .button-primary[disabled], .wp-core-ui .button-primary:disabled, .wp-core-ui .button-primary.button-primary-disabled, .wp-core-ui .button-primary.disabled { color: #c7cdd1 !important; background: #375465 !important; border-color: #375465 !important; text-shadow: none !important; }
 
