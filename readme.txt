@@ -29,7 +29,8 @@ Color schemes in this pack designed by Kate Whitley, Dave Whitley, Mel Choyce, a
 2.3
 
 * Add new "Kirk" theme, inspired by the WordPress 5.3 release art.
-* Update Sass files to match 5.4 core changes.
+* Add new "Contrast Blue" theme, a light color scheme with high contrast text.
+* Update Sass files to match core changes: button styles are updated, various UI cleanup to match theme styles, .
 * Remove unused variable `$action-color`.
 * Developer improvements: Convert to namespace to remove global class; add `stylelint` for color sass files.
 
