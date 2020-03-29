@@ -42,7 +42,7 @@ function add_colors() {
 		'vinyard',
 		__( 'Vinyard', 'admin_schemes' ),
 		plugins_url( "vineyard/colors$suffix.css", __FILE__ ),
-		array( '#301D25', '#462b36', '#d3995d', '#eabe3f' ),
+		array( '#301D25', '#462b36', '#ba8752', '#eabe3f' ),
 		array(
 			'base' => '#f1f2f3',
 			'focus' => '#fff',

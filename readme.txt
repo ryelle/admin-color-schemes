@@ -32,6 +32,7 @@ Color schemes in this pack designed by Kate Whitley, Dave Whitley, Mel Choyce, a
 * Add new "Contrast Blue" theme, a light color scheme with high contrast text.
 * Update Sass files to match core changes: button styles are updated, various UI cleanup to match theme styles, .
 * Remove unused variable `$action-color`.
+* Update Vineyard: Update highlight & notification colors to improve contrast.
 * Developer improvements: Convert to namespace to remove global class; add `stylelint` for color sass files.
 
 2.2
