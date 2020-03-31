@@ -162,9 +162,9 @@ function add_colors() {
 		get_color_url( 'contrast-blue' ),
 		array( '#22466d', '#5c98c8', '#a5cde8', '#dae9f3', '#9d2f4d' ),
 		array(
-			'base' => '#fefcf7',
-			'focus' => '#fff',
-			'current' => '#fff',
+			'base' => '#151923',
+			'focus' => '#151923',
+			'current' => '#151923',
 		)
 	);
 
