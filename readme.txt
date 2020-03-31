@@ -28,6 +28,7 @@ Color schemes in this pack designed by Kate Whitley, Dave Whitley, Mel Choyce, a
 
 2.3
 
+* Add new "Adderley" theme, inspired by the WordPress 5.4 release art.
 * Add new "Kirk" theme, inspired by the WordPress 5.3 release art.
 * Add new "Contrast Blue" theme, a light color scheme with high contrast text.
 * Update Sass files to match core changes: button styles are updated, various UI cleanup to match theme styles, .
