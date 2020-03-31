@@ -8,3 +8,5 @@ Evergreen & Mint designed by @melchoyce
 Primary, Sunset, and Vinyard designed by Kate & Dave Whitley
 
 Kirk inspired by [the WordPress 5.3 release art.](https://wordpress.org/news/2019/11/kirk/)
+
+Adderley inspired by [the WordPress 5.4 release art.](https://wordpress.org/news/2020/03/adderley/)
