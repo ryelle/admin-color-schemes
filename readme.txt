@@ -26,6 +26,10 @@ Color schemes in this pack designed by Kate Whitley, Dave Whitley, Mel Choyce, a
 
 == Changelog ==
 
+2.3.1-dev
+
+* Fix comment icon color on Seashore & High Contrast Blue.
+
 2.3
 
 * Add new "Adderley" theme, inspired by the WordPress 5.4 release art.
