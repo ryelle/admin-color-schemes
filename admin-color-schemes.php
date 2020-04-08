@@ -7,7 +7,7 @@
  * Requires PHP: 5.3
  * Author: WordPress Core Team
  * Author URI: http://wordpress.org/
- * Domain Path: /languages
+ * Text Domain: admin-color-schemes
  */
 
 /*
