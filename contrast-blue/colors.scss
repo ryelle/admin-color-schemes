@@ -2,6 +2,8 @@ $base-color: #a5cde8;
 $text-color: #151923;
 $icon-color: $text-color;
 
+$meta-text-color: #474c57;
+
 $notification-color: #9d2f4d;
 
 $highlight-color: #5c98c8;
@@ -115,15 +117,29 @@ $form-checked: $notification-color;
 .theme-overlay .theme-header .left,
 .theme-overlay .theme-header .right,
 .theme-overlay .theme-header .close::before {
-	color: lighten($text-color, 20%);
+	color: $meta-text-color;
 }
 
 .theme-overlay .theme-version,
 .theme-overlay .theme-tags {
-	color: lighten($text-color, 20%);
+	color: $meta-text-color;
 }
 
 /* Add New Theme: Theme Filters */
+
+.wp-filter {
+	color: $meta-text-color;
+}
+
+.filter-links li > a {
+	color: $meta-text-color;
+}
+
+.filter-count .count,
+.title-count {
+	background: $button-color;
+	color: $button-text-color;
+}
 
 .filter-links li > a:focus,
 .filter-links li > a:hover,
@@ -136,41 +152,40 @@ $form-checked: $notification-color;
 .wp-filter .button.drawer-toggle {
 
 	&::before {
+		// Necessary for removing underline on hover.
 		display: inline-block;
 	}
-}
 
-.wp-filter .button.drawer-toggle:hover,
-.wp-filter .button.drawer-toggle:focus {
-	background-color: transparent;
-	color: $link-focus;
-	text-decoration: underline;
-
-	&::before {
-		color: $link-focus;
-		text-decoration: none;
+	&:focus {
+		border-color: transparent;
+		box-shadow:
+			0 0 0 1px #fff,
+			0 0 0 3px $button-color;
 	}
-}
 
-.wp-filter .button.drawer-toggle:focus {
-	border-color: $highlight-color;
-	box-shadow: none;
-}
+	&:hover,
+	&:focus {
+		background-color: transparent;
+		color: $text-color;
+		text-decoration: underline;
 
-.wp-filter .drawer-toggle.current::before {
-	color: #fff;
+		&::before {
+			color: $text-color;
+			text-decoration: none;
+		}
+	}
 }
 
 .show-filters .wp-filter .button.drawer-toggle {
-	background: #72777c;
-	color: #fff;
-}
+	background: $menu-submenu-background;
+	color: $text-color;
 
-.show-filters .wp-filter .drawer-toggle:hover,
-.show-filters .wp-filter .drawer-toggle:focus {
-	background: rgb(46, 162, 204);
-}
+	&::before {
+		color: $text-color;
+	}
 
-.show-filters .wp-filter .drawer-toggle::before {
-	color: #fff;
+	&:hover,
+	&:focus {
+		background: $menu-submenu-background;
+	}
 }
