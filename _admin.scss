@@ -167,6 +167,31 @@ textarea:focus {
 }
 
 
+/* Add New button */
+
+.wrap .page-title-action,
+.wrap .page-title-action:active {
+	border: 1px solid $secondary-button-color;
+	color: $secondary-button-text-color;
+	background: transparent;
+}
+
+/* lower specificity: color needs to be overridden by :hover and :active */
+.page-title-action:focus {
+	color: $secondary-button-text-color;
+}
+
+.wrap .page-title-action:hover {
+	background: rgba($secondary-button-color, 0.1);
+	border-color: $secondary-button-color;
+	color: $secondary-button-text-color;
+}
+
+.wrap .page-title-action:focus {
+	border-color: $secondary-button-color;
+	box-shadow: 0 0 0 1px $secondary-button-color;
+}
+
 /* Admin Menu */
 
 #adminmenuback,

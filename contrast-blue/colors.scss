@@ -11,6 +11,9 @@ $highlight-color: #5c98c8;
 $button-color: #22466d;
 $button-text-color: #fff;
 
+$secondary-button-color: $button-color;
+$secondary-button-text-color: $button-color;
+
 $link: $button-color;
 $link-focus: lighten($link, 10%);
 
