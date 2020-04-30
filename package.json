@@ -19,7 +19,8 @@
 		],
 		"rules": {
 			"no-descending-specificity": null
-		}
+		},
+		"ignoreFiles": [ "_*.scss" ]
 	},
 	"scripts": {
 		"start": "grunt watch",
