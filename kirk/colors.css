@@ -65,6 +65,16 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="color"]:focu
 
 .view-switch a:hover:before { color: #bd3854; }
 
+/* Add New button */
+.wrap .page-title-action, .wrap .page-title-action:active { border: 1px solid #5f1b29; color: #5f1b29; background: transparent; }
+
+/* lower specificity: color needs to be overridden by :hover and :active */
+.page-title-action:focus { color: #5f1b29; }
+
+.wrap .page-title-action:hover { background: rgba(95, 27, 41, 0.1); border-color: #5f1b29; color: #5f1b29; }
+
+.wrap .page-title-action:focus { border-color: #5f1b29; box-shadow: 0 0 0 1px #5f1b29; }
+
 /* Admin Menu */
 #adminmenuback, #adminmenuwrap, #adminmenu { background: #5f1b29; }
 
