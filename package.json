@@ -21,7 +21,8 @@
 			"no-descending-specificity": null
 		},
 		"ignoreFiles": [
-			"_*.scss"
+			"_*.scss",
+			"editor.css"
 		]
 	},
 	"scripts": {
