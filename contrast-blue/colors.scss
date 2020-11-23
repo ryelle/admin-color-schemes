@@ -192,3 +192,85 @@ $form-checked: $notification-color;
 		background: $menu-submenu-background;
 	}
 }
+
+.wp-core-ui {
+
+	#customize-controls .control-section:hover > .accordion-section-title,
+	#customize-controls .control-section .accordion-section-title:hover,
+	#customize-controls .control-section.open .accordion-section-title,
+	#customize-controls .control-section .accordion-section-title:focus {
+		color: $button-color;
+		border-left-color: $button-color;
+	}
+
+	.customize-controls-close:focus,
+	.customize-controls-close:hover,
+	.customize-controls-preview-toggle:focus,
+	.customize-controls-preview-toggle:hover {
+		color: $button-color;
+		border-top-color: $button-color;
+	}
+
+	.customize-panel-back:hover,
+	.customize-panel-back:focus,
+	.customize-section-back:hover,
+	.customize-section-back:focus {
+		color: $button-color;
+		border-left-color: $button-color;
+	}
+
+	.customize-screen-options-toggle:hover,
+	.customize-screen-options-toggle:active,
+	.customize-screen-options-toggle:focus,
+	.active-menu-screen-options .customize-screen-options-toggle,
+	#customize-controls .customize-info.open.active-menu-screen-options .customize-help-toggle:hover,
+	#customize-controls .customize-info.open.active-menu-screen-options .customize-help-toggle:active,
+	#customize-controls .customize-info.open.active-menu-screen-options .customize-help-toggle:focus {
+		color: $button-color;
+	}
+
+	.wp-customizer .menu-item .submitbox .submitdelete:focus,
+	.customize-screen-options-toggle:focus::before,
+	#customize-controls .customize-info .customize-help-toggle:focus::before,
+	.wp-customizer button:focus .toggle-indicator::before,
+	.menu-delete:focus,
+	.menu-item-bar .item-delete:focus::before,
+	#available-menu-items .item-add:focus::before,
+	#customize-save-button-wrapper .save:focus,
+	#publish-settings:focus {
+		box-shadow:
+			0 0 0 1px lighten($button-color, 10),
+			0 0 2px 1px $button-color;
+	}
+
+	#customize-controls .customize-info.open .customize-help-toggle,
+	#customize-controls .customize-info .customize-help-toggle:focus,
+	#customize-controls .customize-info .customize-help-toggle:hover {
+		color: $button-color;
+	}
+
+	.control-panel-themes .customize-themes-section-title:focus,
+	.control-panel-themes .customize-themes-section-title:hover {
+		border-left-color: $button-color;
+		color: $button-color;
+	}
+
+	.control-panel-themes .theme-section .customize-themes-section-title.selected::after {
+		background: $button-color;
+	}
+
+	.control-panel-themes .customize-themes-section-title.selected {
+		color: $button-color;
+	}
+
+	#customize-theme-controls .control-section:hover > .accordion-section-title::after,
+	#customize-theme-controls .control-section .accordion-section-title:hover::after,
+	#customize-theme-controls .control-section.open .accordion-section-title::after,
+	#customize-theme-controls .control-section .accordion-section-title:focus::after,
+	#customize-outer-theme-controls .control-section:hover > .accordion-section-title::after,
+	#customize-outer-theme-controls .control-section .accordion-section-title:hover::after,
+	#customize-outer-theme-controls .control-section.open .accordion-section-title::after,
+	#customize-outer-theme-controls .control-section .accordion-section-title:focus::after {
+		color: $button-color;
+	}
+}
