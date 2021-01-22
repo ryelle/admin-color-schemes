@@ -49,8 +49,9 @@ function get_color_url( $color ) {
  */
 function add_colors() {
 	wp_admin_css_color(
+		// The color name needs to stay misspelled for back-compat.
 		'vinyard',
-		__( 'Vinyard', 'admin_schemes' ),
+		__( 'Vineyard', 'admin_schemes' ),
 		get_color_url( 'vineyard' ),
 		array( '#301D25', '#462b36', '#ba8752', '#eabe3f' ),
 		array(
