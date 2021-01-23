@@ -65,7 +65,7 @@ function add_colors() {
 		'primary',
 		__( 'Primary', 'admin_schemes' ),
 		get_color_url( 'primary' ),
-		array( '#282b48', '#35395c', '#f38135', '#e7c03a' ),
+		array( '#282b48', '#35395c', '#e46713', '#e7c03a' ),
 		array(
 			'base' => '#f1f2f3',
 			'focus' => '#fff',
@@ -77,7 +77,7 @@ function add_colors() {
 		'80s-kid',
 		__( '80\'s Kid', 'admin_schemes' ),
 		get_color_url( '80s-kid' ),
-		array( '#0A3D80', '#0c4da1', '#ed5793', '#eb853b' ),
+		array( '#0c4da1', '#d13674', '#28b811' ),
 		array(
 			'base' => '#e4e5e7',
 			'focus' => '#fff',
@@ -89,7 +89,7 @@ function add_colors() {
 		'aubergine',
 		__( 'Aubergine', 'admin_schemes' ),
 		get_color_url( 'aubergine' ),
-		array( '#4c4b5f', '#585a61', '#e87162', '#da9b49' ),
+		array( '#4c4b5f', '#585a61', '#ba5b32', '#da9b49' ),
 		array(
 			'base' => '#e4e4e7',
 			'focus' => '#fff',
@@ -101,7 +101,7 @@ function add_colors() {
 		'cruise',
 		__( 'Cruise', 'admin_schemes' ),
 		get_color_url( 'cruise' ),
-		array( '#292B46', '#36395c', '#8bbc9f', '#d2ac1f' ),
+		array( '#292B46', '#36395c', '#cda200', '#79b591' ),
 		array(
 			'base' => '#f1f1f3',
 			'focus' => '#fff',
