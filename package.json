@@ -4,6 +4,7 @@
 	"description": "WordPress dashboard color schemes",
 	"version": "2.3.1-dev",
 	"devDependencies": {
+		"@wordpress/env": "4.1.3",
 		"@wordpress/stylelint-config": "19.1.0",
 		"gulp": "4.0.2",
 		"gulp-concat": "2.6.1",
@@ -26,6 +27,7 @@
 		]
 	},
 	"scripts": {
+		"wp-env": "wp-env",
 		"start": "gulp",
 		"build": "gulp build",
 		"lint": "stylelint */*.scss"
