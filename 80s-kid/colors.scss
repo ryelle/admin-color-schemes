@@ -2,4 +2,7 @@ $base-color: #0c4da1;
 $highlight-color: #d13674;
 $notification-color: #28b811;
 
+$link: $base-color;
+$link-focus: $highlight-color;
+
 @import "../admin";
