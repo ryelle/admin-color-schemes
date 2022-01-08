@@ -181,5 +181,17 @@ function add_colors() {
 		)
 	);
 }
-
 add_action( 'admin_init', __NAMESPACE__ . '\add_colors' );
+
+/**
+ * Add our theme custom properties to the editor.
+ */
+function add_editor_themes() {
+	wp_enqueue_style(
+		'acs-editor-themes',
+		plugins_url( 'editor.css', __FILE__ ),
+		array(),
+		VERSION
+	);
+}
+add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\add_editor_themes' );

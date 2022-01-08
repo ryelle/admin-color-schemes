@@ -1,0 +1,6 @@
+@import "../mixins";
+
+body.admin-color-kirk {
+
+	@include generate-editor-custom-properties( #8b2238 );
+}

@@ -1,0 +1,6 @@
+@import "../mixins";
+
+body.admin-color-80s-kid {
+
+	@include generate-editor-custom-properties( #d13674 );
+}

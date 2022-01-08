@@ -1,0 +1,6 @@
+@import "../mixins";
+
+body.admin-color-aubergine {
+
+	@include generate-editor-custom-properties( #ba5b32 );
+}

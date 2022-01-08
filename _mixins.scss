@@ -1,7 +1,5 @@
-/*
- * Button mixin- creates a button effect with correct
- * highlights/shadows, based on a base color.
- */
+// Button mixin- creates a button effect with correct
+// highlights/shadows, based on a base color.
 @mixin button( $button-color, $button-text-color: #fff ) {
 	background: $button-color;
 	border-color: $button-color;
@@ -34,4 +32,12 @@
 		border-color: darken( $button-color, 15% );
 		box-shadow: inset 0 2px 5px -3px darken( $button-color, 50% );
 	}
+}
+
+@mixin generate-editor-custom-properties( $editor-color ) {
+	--wp-admin-theme-color: #{$editor-color};
+
+	// Darker shades.
+	--wp-admin-theme-color-darker-10: #{darken($editor-color, 5%)};
+	--wp-admin-theme-color-darker-20: #{darken($editor-color, 10%)};
 }

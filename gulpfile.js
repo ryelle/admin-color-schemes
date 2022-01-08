@@ -15,8 +15,17 @@ function admin() {
     .pipe(dest("./"));
 }
 
-exports.build = parallel(admin);
+function editor() {
+  return src("./*/editor.scss")
+    .pipe(sass.sync().on("error", sass.logError))
+    .pipe(concat("editor.css"))
+    .pipe(dest("./"));
+}
+
+exports.build = parallel(admin, editor);
 
 exports.default = function () {
+  // You can use a single task
   watch("*/colors.scss", admin);
+  watch("*/editor.scss", editor);
 };
