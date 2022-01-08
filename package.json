@@ -2,20 +2,20 @@
 	"name": "Admin-Color-Schemes",
 	"slug": "admin-color-schemes",
 	"description": "WordPress dashboard color schemes",
-	"version": "0.1.0",
+	"version": "2.3.1-dev",
 	"devDependencies": {
+		"@wordpress/stylelint-config": "19.1.0",
 		"gulp": "4.0.2",
 		"gulp-concat": "2.6.1",
 		"gulp-csso": "4.0.1",
 		"gulp-dart-sass": "1.0.2",
 		"gulp-rename": "2.0.0",
-		"gulp-rtlcss": "1.4.1",
-		"stylelint": "13.8.0",
-		"stylelint-config-wordpress": "17.0.0"
+		"gulp-rtlcss": "1.4.2",
+		"stylelint": "13.13.1"
 	},
 	"stylelint": {
 		"extends": [
-			"stylelint-config-wordpress/scss"
+			"@wordpress/stylelint-config/scss"
 		],
 		"rules": {
 			"no-descending-specificity": null

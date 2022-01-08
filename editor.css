@@ -1,0 +1,55 @@
+body.admin-color-80s-kid {
+  --wp-admin-theme-color: #d13674;
+  --wp-admin-theme-color-darker-10: #c12c68;
+  --wp-admin-theme-color-darker-20: #ad275d;
+}
+body.admin-color-aubergine {
+  --wp-admin-theme-color: #ba5b32;
+  --wp-admin-theme-color-darker-10: #a6512d;
+  --wp-admin-theme-color-darker-20: #924727;
+}
+body.admin-color-adderley {
+  --wp-admin-theme-color: #1730e5;
+  --wp-admin-theme-color-darker-10: #152bce;
+  --wp-admin-theme-color-darker-20: #1226b7;
+}
+body.admin-color-contrast-blue {
+  --wp-admin-theme-color: #22466d;
+  --wp-admin-theme-color-darker-10: #1c3a5a;
+  --wp-admin-theme-color-darker-20: #162d46;
+}
+body.admin-color-cruise {
+  --wp-admin-theme-color: #4f56a9;
+  --wp-admin-theme-color-darker-10: #474d98;
+  --wp-admin-theme-color-darker-20: #3f4486;
+}
+body.admin-color-kirk {
+  --wp-admin-theme-color: #8b2238;
+  --wp-admin-theme-color-darker-10: #771d30;
+  --wp-admin-theme-color-darker-20: #621827;
+}
+body.admin-color-lawn {
+  --wp-admin-theme-color: #456a7f;
+  --wp-admin-theme-color-darker-10: #3c5c6e;
+  --wp-admin-theme-color-darker-20: #334e5e;
+}
+body.admin-color-flat {
+  --wp-admin-theme-color: #11919e;
+  --wp-admin-theme-color-darker-10: #0f7c87;
+  --wp-admin-theme-color-darker-20: #0c6770;
+}
+body.admin-color-primary {
+  --wp-admin-theme-color: #240e73;
+  --wp-admin-theme-color-darker-10: #1d0b5c;
+  --wp-admin-theme-color-darker-20: #160846;
+}
+body.admin-color-seashore {
+  --wp-admin-theme-color: #456a7f;
+  --wp-admin-theme-color-darker-10: #3c5c6e;
+  --wp-admin-theme-color-darker-20: #334e5e;
+}
+body.admin-color-vinyard {
+  --wp-admin-theme-color: #72324c;
+  --wp-admin-theme-color-darker-10: #602a40;
+  --wp-admin-theme-color-darker-20: #4f2234;
+}
