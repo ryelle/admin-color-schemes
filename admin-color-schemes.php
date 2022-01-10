@@ -180,6 +180,18 @@ function add_colors() {
 			'current' => '#fff',
 		)
 	);
+
+	wp_admin_css_color(
+		'modern-evergreen',
+		__( 'Modern Evergreen', 'admin-color-schemes' ),
+		get_color_url( 'modern-evergreen' ),
+		array( '#1e8060', '#0f4232', '#1e1e1e', '#3855e1' ),
+		array(
+			'base' => '#f1f3f3',
+			'focus' => '#fff',
+			'current' => '#fff',
+		)
+	);
 }
 add_action( 'admin_init', __NAMESPACE__ . '\add_colors' );
 

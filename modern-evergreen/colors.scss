@@ -1,0 +1,15 @@
+$base-color: #1e8060;
+$highlight-color: darken($base-color, 15%);
+$notification-color: #1e1e1e;
+
+$menu-submenu-focus-text: #fff;
+
+$menu-bubble-current-background: $notification-color;
+
+$button-color: #3855e1;
+$button-text-color: #fff;
+
+$link: $button-color;
+$link-focus: darken($link, 10%);
+
+@import "../admin";

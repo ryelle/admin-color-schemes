@@ -1,0 +1,6 @@
+@import "../mixins";
+
+body.admin-color-modern-evergreen {
+
+	@include generate-editor-custom-properties( #3855e1 );
+}
