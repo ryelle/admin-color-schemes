@@ -808,7 +808,7 @@ div#wp-responsive-toggle a:before {
 
 /* Welcome Panel */
 
-.welcome-panel {
+body:not( .wp-58, .wp-57 ) .welcome-panel {
 	background-color: $highlight-color;
 }
 

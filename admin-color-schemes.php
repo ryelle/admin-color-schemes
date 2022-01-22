@@ -207,3 +207,17 @@ function add_editor_themes() {
 	);
 }
 add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\add_editor_themes' );
+
+/**
+ * Add the wordpress version to the body class, in format `wp-XX`.
+ * This allows for some conditional styling depending on version.
+ *
+ * @param string $classes Space-separated list of CSS classes.
+ * @return string Filtered class names.
+ */
+function admin_body_class( $classes ) {
+	list( $display_version ) = explode( '-', get_bloginfo( 'version' ) );
+	$classes .= ' wp-' . substr( str_replace( '.', '', $display_version ), 0, 2 );
+	return $classes;
+}
+add_action( 'admin_body_class', __NAMESPACE__ . '\admin_body_class' );
