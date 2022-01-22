@@ -27,5 +27,6 @@ exports.build = parallel(admin, editor);
 exports.default = function () {
   // You can use a single task
   watch("*/colors.scss", admin);
+  watch("*.scss", parallel(admin, editor));
   watch("*/editor.scss", editor);
 };
