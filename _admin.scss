@@ -215,29 +215,28 @@ textarea:focus {
 
 
 /* List tables */
-/* Add New button */
+@if $low-contrast-theme == "true" {
+	.wrap .page-title-action:hover {
+		color: $menu-text;
+		background-color: $menu-background;
+	}
+} @else {
+	.wrap .page-title-action,
+	.wrap .page-title-action:active {
+		border: 1px solid $highlight-color;
+		color: $highlight-color;
+	}
 
-.wrap .page-title-action,
-.wrap .page-title-action:active {
-	border: 1px solid $secondary-button-color;
-	color: $secondary-button-text-color;
-	background: transparent;
-}
+	.wrap .page-title-action:hover {
+		color: darken($highlight-color, 10);
+		border-color: darken($highlight-color, 10);
+	}
 
-/* lower specificity: color needs to be overridden by :hover and :active */
-.page-title-action:focus {
-	color: $secondary-button-text-color;
-}
-
-.wrap .page-title-action:hover {
-	background: rgba($secondary-button-color, 0.1);
-	border-color: $secondary-button-color;
-	color: $secondary-button-text-color;
-}
-
-.wrap .page-title-action:focus {
-	border-color: $secondary-button-color;
-	box-shadow: 0 0 0 1px $secondary-button-color;
+	.wrap .page-title-action:focus {
+		border-color: lighten($highlight-color, 10);
+		color: darken($highlight-color, 20);;
+		box-shadow: 0 0 0 1px lighten($highlight-color, 10);
+	}
 }
 
 .view-switch a.current:before {
@@ -247,6 +246,7 @@ textarea:focus {
 .view-switch a:hover:before {
 	color: $menu-bubble-background;
 }
+
 
 /* Admin Menu */
 
@@ -293,12 +293,12 @@ textarea:focus {
 #adminmenu .wp-submenu,
 #adminmenu .wp-has-current-submenu .wp-submenu,
 #adminmenu .wp-has-current-submenu.opensub .wp-submenu,
-.folded #adminmenu .wp-has-current-submenu .wp-submenu,
 #adminmenu a.wp-has-current-submenu:focus + .wp-submenu {
 	background: $menu-submenu-background;
 }
 
-#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
+#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after,
+#adminmenu li.wp-has-submenu.wp-not-current-submenu:focus-within:after {
 	border-right-color: $menu-submenu-background;
 }
 
@@ -308,7 +308,6 @@ textarea:focus {
 
 #adminmenu .wp-submenu a,
 #adminmenu .wp-has-current-submenu .wp-submenu a,
-.folded #adminmenu .wp-has-current-submenu .wp-submenu a,
 #adminmenu a.wp-has-current-submenu:focus + .wp-submenu a,
 #adminmenu .wp-has-current-submenu.opensub .wp-submenu a {
 	color: $menu-submenu-text;
@@ -424,7 +423,7 @@ ul#adminmenu > li.current > a.current:after {
 #wpadminbar:not(.mobile) li:hover .ab-item:before,
 #wpadminbar:not(.mobile) li:hover .ab-item:after,
 #wpadminbar:not(.mobile) li:hover #adminbarsearch:before {
-	color: $menu-highlight-icon;
+	color: $menu-submenu-focus-text;
 }
 
 
@@ -646,6 +645,7 @@ body.more-filters-opened .more-filters:focus:before {
 		0 0 2px 1px $button-color;
 }
 
+
 /* Responsive Component */
 
 div#wp-responsive-toggle a:before {
@@ -712,11 +712,9 @@ div#wp-responsive-toggle a:before {
 		color: $secondary-button-text-color;
 	}
 
-	.wp-customizer .menu-item .submitbox .submitdelete:focus,
 	.customize-screen-options-toggle:focus:before,
 	#customize-controls .customize-info .customize-help-toggle:focus:before,
-	.wp-customizer button:focus .toggle-indicator:before,
-	.menu-delete:focus,
+	&.wp-customizer button:focus .toggle-indicator:before,
 	.menu-item-bar .item-delete:focus:before,
 	#available-menu-items .item-add:focus:before,
 	#customize-save-button-wrapper .save:focus,
@@ -756,36 +754,46 @@ div#wp-responsive-toggle a:before {
 	#customize-outer-theme-controls .control-section .accordion-section-title:focus:after {
 		color: $secondary-button-text-color;
 	}
-}
 
-.customize-control .attachment-media-view .button-add-media:focus {
-	background-color: #fbfbfc;
-	border-color: $button-color;
-	border-style: solid;
-	box-shadow: 0 0 0 1px $button-color;
-	outline: 2px solid transparent;
-}
+	&.wp-customizer .theme-overlay .theme-header .close:focus,
+	&.wp-customizer .theme-overlay .theme-header .close:hover,
+	&.wp-customizer .theme-overlay .theme-header .right:focus,
+	&.wp-customizer .theme-overlay .theme-header .right:hover,
+	&.wp-customizer .theme-overlay .theme-header .left:focus,
+	&.wp-customizer .theme-overlay .theme-header .left:hover {
+		border-bottom-color: $button-color;
+		color: $link;
+	}
 
-.wp-full-overlay-footer .devices button:focus,
-.wp-full-overlay-footer .devices button.active:hover {
-	border-bottom-color: $button-color;
-}
+	.customize-control .attachment-media-view .button-add-media:focus {
+		background-color: #fbfbfc;
+		border-color: $button-color;
+		border-style: solid;
+		box-shadow: 0 0 0 1px $button-color;
+		outline: 2px solid transparent;
+	}
 
-.wp-core-ui .wp-full-overlay .collapse-sidebar:hover,
-.wp-core-ui .wp-full-overlay .collapse-sidebar:focus {
-	color: $secondary-button-text-color;
-}
+	.wp-full-overlay-footer .devices button:focus,
+	.wp-full-overlay-footer .devices button.active:hover {
+		border-bottom-color: $button-color;
+	}
 
-.wp-full-overlay .collapse-sidebar:hover .collapse-sidebar-arrow,
-.wp-full-overlay .collapse-sidebar:focus .collapse-sidebar-arrow {
-	box-shadow:
-		0 0 0 1px lighten($button-color, 10),
-		0 0 2px 1px $button-color;
-}
+	.wp-full-overlay-footer .devices button:hover:before,
+	.wp-full-overlay-footer .devices button:focus:before {
+		color: $button-color;
+	}
 
-.wp-full-overlay-footer .devices button:hover:before,
-.wp-full-overlay-footer .devices button:focus:before {
-	color: $button-color;
+	.wp-full-overlay .collapse-sidebar:hover,
+	.wp-full-overlay .collapse-sidebar:focus {
+		color: $button-color;
+	}
+
+	.wp-full-overlay .collapse-sidebar:hover .collapse-sidebar-arrow,
+	.wp-full-overlay .collapse-sidebar:focus .collapse-sidebar-arrow {
+		box-shadow:
+			0 0 0 1px lighten($button-color, 10),
+			0 0 2px 1px $button-color;
+	}
 }
 
 /* Site Health */
@@ -796,4 +804,18 @@ div#wp-responsive-toggle a:before {
 
 .health-check-accordion-trigger:focus {
 	outline: 2px solid $button-color;
+}
+
+/* Welcome Panel */
+
+.welcome-panel {
+	background-color: $highlight-color;
+}
+
+[class*="welcome-panel-icon"] {
+	@if ( $scheme-name == "light" ) {
+		background-color: $icon-color;
+	} @else {
+		background-color: $base-color;
+	}
 }
