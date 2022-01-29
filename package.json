@@ -2,7 +2,7 @@
 	"name": "Admin-Color-Schemes",
 	"slug": "admin-color-schemes",
 	"description": "WordPress dashboard color schemes",
-	"version": "2.3.1-dev",
+	"version": "3.0.0-dev",
 	"devDependencies": {
 		"@wordpress/env": "4.2.0",
 		"@wordpress/stylelint-config": "19.1.0",
