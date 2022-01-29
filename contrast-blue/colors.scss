@@ -192,3 +192,23 @@ $form-checked: $notification-color;
 		background: $menu-submenu-background;
 	}
 }
+
+/* Add New buttons */
+.wrap .page-title-action,
+.wrap .page-title-action:active {
+	border: 1px solid $button-color;
+	color: $button-color;
+}
+
+.wrap .page-title-action:hover {
+	color: $text-color;
+	border-color: $text-color;
+	background: $menu-submenu-background;
+}
+
+.wrap .page-title-action:focus {
+	color: $text-color;
+	border-color: $text-color;
+	background: $menu-submenu-background;
+	box-shadow: 0 0 0 2px $menu-submenu-background;
+}
