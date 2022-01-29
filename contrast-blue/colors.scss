@@ -212,3 +212,8 @@ $form-checked: $notification-color;
 	background: $menu-submenu-background;
 	box-shadow: 0 0 0 2px $menu-submenu-background;
 }
+
+/* Dashboard welcome icons */
+[class*="welcome-panel-icon"] {
+	background-color: $notification-color;
+}

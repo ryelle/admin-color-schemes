@@ -21,3 +21,8 @@ $link: $highlight-color;
 $link-focus: $icon-color;
 
 @import "../admin";
+
+/* Dashboard welcome icons */
+[class*="welcome-panel-icon"] {
+	background-color: $menu-bubble-background;
+}

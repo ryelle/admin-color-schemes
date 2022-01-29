@@ -808,14 +808,10 @@ div#wp-responsive-toggle a:before {
 
 /* Welcome Panel */
 
-body:not( .wp-58, .wp-57 ) .welcome-panel {
+body:not(.wp-58, .wp-57) .welcome-panel {
 	background-color: $highlight-color;
 }
 
 [class*="welcome-panel-icon"] {
-	@if ( $scheme-name == "light" ) {
-		background-color: $icon-color;
-	} @else {
-		background-color: $base-color;
-	}
+	background-color: $base-color;
 }
