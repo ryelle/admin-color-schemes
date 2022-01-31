@@ -16,13 +16,19 @@ Color schemes in this pack designed by Kate Whitley, Dave Whitley, Mel Choyce, a
 
 == Screenshots ==
 
-1. Aubergine, by Kate Whitley & Kelly Dwan
+1. 80's Kid
 
-2. Flat, by Mel Choyce
+2. Kirk
 
-3. Vineyard, by Kate & Dave Whitley
+3. Vineyard
 
-4. All your awesome color choices
+4. Cruise
+
+5. Adderley
+
+6. Modern Evergreen
+
+7. All your awesome color choices
 
 == Changelog ==
 
