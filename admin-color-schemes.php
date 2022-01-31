@@ -3,7 +3,7 @@
  * Plugin Name: Admin Color Schemes
  * Plugin URI: http://wordpress.org/plugins/admin-color-schemes/
  * Description: Even more admin color schemes
- * Version: 3.0.0-dev
+ * Version: 3.0.0
  * Requires PHP: 5.3
  * Author: WordPress Core Team
  * Author URI: http://wordpress.org/
@@ -32,7 +32,7 @@ namespace ACS_Color_Schemes;
 use function add_action;
 use function wp_admin_css_color;
 
-const VERSION = '2.3';
+const VERSION = '3.0.0';
 
 /**
  * Helper function to get stylesheet URL.
