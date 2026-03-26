@@ -1,36 +1,29 @@
-$base-color: #a5cde8;
-$text-color: #151923;
-$icon-color: $text-color;
+@use "sass:color";
 
 $meta-text-color: #474c57;
 
-$notification-color: #9d2f4d;
-
-$highlight-color: #5c98c8;
-
-$button-color: #22466d;
-$button-text-color: #fff;
-
-$secondary-button-color: $button-color;
-$secondary-button-text-color: $button-color;
-
-$link: $button-color;
-$link-focus: lighten($link, 10%);
-
-$menu-bubble-text: #fff;
-$menu-bubble-current-background: $notification-color;
-$menu-bubble-current-text: $menu-bubble-text;
-
-$menu-highlight-background: #dae9f3;
-
-$menu-submenu-text: $text-color;
-$menu-submenu-focus-text: $text-color;
-$menu-submenu-background: #b5d3e8;
-$menu-submenu-background-alt: $menu-submenu-background;
-
-$form-checked: $notification-color;
-
-@import "../admin";
+@use "../admin" as * with (
+	$base-color: #a5cde8,
+	$text-color: #151923,
+	$icon-color: #151923,
+	$notification-color: #9d2f4d,
+	$highlight-color: #5c98c8,
+	$button-color: #22466d,
+	$button-text-color: #fff,
+	$secondary-button-color: #22466d,
+	$secondary-button-text-color: #22466d,
+	$link: #22466d,
+	$link-focus: color.adjust(#22466d, $lightness: 10%),
+	$menu-bubble-text: #fff,
+	$menu-bubble-current-background: #9d2f4d,
+	$menu-bubble-current-text: #fff,
+	$menu-highlight-background: #dae9f3,
+	$menu-submenu-text: #151923,
+	$menu-submenu-focus-text: #151923,
+	$menu-submenu-background: #b5d3e8,
+	$menu-submenu-background-alt: #b5d3e8,
+	$form-checked: #9d2f4d
+);
 
 
 /**
@@ -110,7 +103,7 @@ $form-checked: $notification-color;
 
 .theme-browser .theme.add-new-theme a:focus span::after,
 .theme-browser .theme.add-new-theme a:hover span::after {
-	color: lighten($text-color, 20%);
+	color: color.adjust($text-color, $lightness: 20%);
 }
 
 .theme-browser .theme.active .theme-actions {

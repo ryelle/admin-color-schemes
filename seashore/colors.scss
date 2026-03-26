@@ -1,26 +1,21 @@
-$base-color: desaturate(#ece2ba, 25%);
-$text-color: desaturate(#73340f, 50%);
-$icon-color: $text-color;
-
-$highlight-color: #456a7f;
-$notification-color: #456a7f;
-
-$body-background: lighten($base-color, 13%);
-
-$button-text-color: $body-background;
-$menu-highlight-text: $body-background;
-$menu-highlight-icon: $body-background;
-
-$menu-bubble-background: #73340f;
-$menu-bubble-text: $menu-highlight-text;
-
-$menu-collapse-focus-text: $highlight-color;
-$menu-collapse-focus-icon: $highlight-color;
-
-$link: $highlight-color;
-$link-focus: $icon-color;
-
-@import "../admin";
+@use "sass:color";
+@use "../admin" as * with (
+	$base-color: color.adjust(#ece2ba, $saturation: -25%),
+	$text-color: color.adjust(#73340f, $saturation: -50%),
+	$icon-color: color.adjust(#73340f, $saturation: -50%),
+	$highlight-color: #456a7f,
+	$notification-color: #456a7f,
+	$body-background: color.adjust(color.adjust(#ece2ba, $saturation: -25%), $lightness: 13%),
+	$button-text-color: color.adjust(color.adjust(#ece2ba, $saturation: -25%), $lightness: 13%),
+	$menu-highlight-text: color.adjust(color.adjust(#ece2ba, $saturation: -25%), $lightness: 13%),
+	$menu-highlight-icon: color.adjust(color.adjust(#ece2ba, $saturation: -25%), $lightness: 13%),
+	$menu-bubble-background: #73340f,
+	$menu-bubble-text: color.adjust(color.adjust(#ece2ba, $saturation: -25%), $lightness: 13%),
+	$menu-collapse-focus-text: #456a7f,
+	$menu-collapse-focus-icon: #456a7f,
+	$link: #456a7f,
+	$link-focus: color.adjust(#73340f, $saturation: -50%)
+);
 
 /* Dashboard welcome icons */
 [class*="welcome-panel-icon"] {

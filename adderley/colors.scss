@@ -1,22 +1,17 @@
-$base-color: #216bce;
-$highlight-color: #1730e5;
-$notification-color: #bde7f0;
-
-$secondary-button-color: $highlight-color;
-$secondary-button-text-color: $highlight-color;
-
-$menu-submenu-focus-text: $notification-color;
-
-$menu-bubble-text: $base-color;
-$menu-bubble-current-background: $notification-color;
-$menu-bubble-current-text: $base-color;
-
-$form-checked: #216bce;
-
-$link: $highlight-color;
-$link-focus: $base-color;
-
-@import "../admin";
+@use "../admin" as * with (
+	$base-color: #216bce,
+	$highlight-color: #1730e5,
+	$notification-color: #bde7f0,
+	$secondary-button-color: #1730e5,
+	$secondary-button-text-color: #1730e5,
+	$menu-submenu-focus-text: #bde7f0,
+	$menu-bubble-text: #216bce,
+	$menu-bubble-current-background: #bde7f0,
+	$menu-bubble-current-text: #216bce,
+	$form-checked: #216bce,
+	$link: #1730e5,
+	$link-focus: #216bce
+);
 
 /**
  * There's not enough contrast between regular submenu items & hovered items,
