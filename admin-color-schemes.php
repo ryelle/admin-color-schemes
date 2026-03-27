@@ -53,7 +53,7 @@ function add_colors() {
 		'vinyard',
 		__( 'Vineyard', 'admin_schemes' ),
 		get_color_url( 'vineyard' ),
-		array( '#301D25', '#462b36', '#ba8752', '#eabe3f' ),
+		array( '#301d25', '#462b36', '#ba8752', '#eabe3f' ),
 		array(
 			'base' => '#f1f2f3',
 			'focus' => '#fff',
@@ -101,7 +101,7 @@ function add_colors() {
 		'cruise',
 		__( 'Cruise', 'admin_schemes' ),
 		get_color_url( 'cruise' ),
-		array( '#292B46', '#36395c', '#cda200', '#79b591' ),
+		array( '#292b46', '#36395c', '#cda200', '#79b591' ),
 		array(
 			'base' => '#f1f1f3',
 			'focus' => '#fff',
@@ -113,7 +113,7 @@ function add_colors() {
 		'flat',
 		__( 'Flat', 'admin_schemes' ),
 		get_color_url( 'flat' ),
-		array( '#1F2C39', '#2c3e50', '#1abc9c', '#f39c12' ),
+		array( '#1f2c39', '#2c3e50', '#1abc9c', '#f39c12' ),
 		array(
 			'base' => '#f1f2f3',
 			'focus' => '#fff',
@@ -125,7 +125,7 @@ function add_colors() {
 		'lawn',
 		__( 'Lawn', 'admin_schemes' ),
 		get_color_url( 'lawn' ),
-		array( '#0F1515', '#1e2a29', '#5D824B', '#a7b145' ),
+		array( '#0f1515', '#1e2a29', '#636a00', '#a7b145' ),
 		array(
 			'base' => '#f1f3f3',
 			'focus' => '#fff',
@@ -137,7 +137,7 @@ function add_colors() {
 		'seashore',
 		__( 'Seashore', 'admin_schemes' ),
 		get_color_url( 'seashore' ),
-		array( '#F8F6F1', '#d5cdad', '#7D6B5C', '#456a7f' ),
+		array( '#f8f6f1', '#d5cdad', '#7d6b5c', '#456a7f' ),
 		array(
 			'base' => '#533C2F',
 			'focus' => '#F8F6F1',
