@@ -2,5 +2,5 @@
 
 body.admin-color-lawn {
 
-	@include generate-editor-custom-properties( #636a00 );
+	@include generate-custom-properties( #636a00 );
 }

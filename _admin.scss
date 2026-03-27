@@ -16,6 +16,8 @@
 
 body {
 	background: variables.$body-background;
+	/* Note: Added to body for specificity */
+	@include mixins.generate-custom-properties(variables.$base-color);
 }
 
 

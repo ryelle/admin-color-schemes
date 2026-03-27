@@ -2,5 +2,5 @@
 
 body.admin-color-flat {
 
-	@include generate-editor-custom-properties( #11919e );
+	@include generate-custom-properties( #11919e );
 }

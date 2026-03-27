@@ -2,5 +2,5 @@
 
 body.admin-color-primary {
 
-	@include generate-editor-custom-properties( #303179 );
+	@include generate-custom-properties( #303179 );
 }
