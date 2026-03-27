@@ -1,7 +1,9 @@
 @use "../admin" as * with (
+	$scheme-name: "aubergine",
 	$base-color: #5c5b73,
 	$highlight-color: #c99416,
 	$notification-color: #ba5b32,
 	$link: #353354,
-	$link-focus: #ba5b32
+	$link-focus: #ba5b32,
+	$low-contrast-theme: "true"
 );

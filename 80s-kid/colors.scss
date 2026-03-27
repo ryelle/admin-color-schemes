@@ -1,7 +1,9 @@
 @use "../admin" as * with (
+	$scheme-name: "80s-kid",
 	$base-color: #0c4da1,
 	$highlight-color: #d13674,
 	$notification-color: #28b811,
 	$link: #0c4da1,
-	$link-focus: #d13674
+	$link-focus: #d13674,
+	$form-checked: #0c4da1,
 );

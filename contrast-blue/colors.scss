@@ -3,6 +3,7 @@
 $meta-text-color: #474c57;
 
 @use "../admin" as * with (
+	$scheme-name: "contrast-blue",
 	$base-color: #a5cde8,
 	$text-color: #151923,
 	$icon-color: #151923,

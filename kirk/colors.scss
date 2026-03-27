@@ -1,5 +1,6 @@
 @use "sass:color";
 @use "../admin" as * with (
+	$scheme-name: "flat",
 	$base-color: #5f1b29,
 	$highlight-color: #bd3854,
 	$notification-color: #bd3854,

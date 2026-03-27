@@ -1,5 +1,6 @@
 @use "sass:color";
 @use "../admin" as * with (
+	$scheme-name: "seashore",
 	$base-color: color.adjust(#ece2ba, $saturation: -25%),
 	$text-color: color.adjust(#73340f, $saturation: -50%),
 	$icon-color: color.adjust(#73340f, $saturation: -50%),
