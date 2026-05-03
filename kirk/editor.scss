@@ -1,6 +1,0 @@
-@use "../mixins" as *;
-
-body.admin-color-kirk {
-
-	@include generate-custom-properties( #8b2238 );
-}

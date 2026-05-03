@@ -1,6 +1,0 @@
-@use "../mixins" as *;
-
-body.admin-color-cruise {
-
-	@include generate-custom-properties( #4f56a9 );
-}

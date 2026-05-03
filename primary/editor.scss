@@ -1,6 +1,0 @@
-@use "../mixins" as *;
-
-body.admin-color-primary {
-
-	@include generate-custom-properties( #303179 );
-}

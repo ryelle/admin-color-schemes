@@ -1,6 +1,0 @@
-@use "../mixins" as *;
-
-body.admin-color-contrast-blue {
-
-	@include generate-custom-properties( #22466d );
-}

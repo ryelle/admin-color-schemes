@@ -1,0 +1,16 @@
+@use 'sass:color';
+$scheme-name: "default" !default;
+$color-primary: "#fff" !default;
+
+body.admin-color-#{$scheme-name} {
+
+  // Define RGB equivalents for use in rgba function.
+  // Hexadecimal css vars do not work in the rgba function.
+  --wp-admin-theme-color: #{$color-primary};
+  --wp-admin-theme-color--rgb: #{hex-to-rgb($color-primary)};
+  // Darker shades.
+  --wp-admin-theme-color-darker-10: #{color.adjust($color-primary, $lightness: -5%)};
+  --wp-admin-theme-color-darker-10--rgb: #{hex-to-rgb(color.adjust($color-primary, $lightness: -5%))};
+  --wp-admin-theme-color-darker-20: #{color.adjust($color-primary, $lightness: -10%)};
+  --wp-admin-theme-color-darker-20--rgb: #{hex-to-rgb(color.adjust($color-primary, $lightness: -10%))};
+}

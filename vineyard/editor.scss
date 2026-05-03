@@ -1,6 +1,0 @@
-@use "../mixins" as *;
-
-body.admin-color-vinyard {
-
-	@include generate-custom-properties( #72324c );
-}

@@ -1,6 +1,0 @@
-@use "../mixins" as *;
-
-body.admin-color-modern-evergreen {
-
-	@include generate-custom-properties( #1e8060 );
-}

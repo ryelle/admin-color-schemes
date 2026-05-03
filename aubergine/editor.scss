@@ -1,6 +1,0 @@
-@use "../mixins" as *;
-
-body.admin-color-aubergine {
-
-	@include generate-custom-properties( #534e80 );
-}

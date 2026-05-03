@@ -1,6 +1,0 @@
-@use "../mixins" as *;
-
-body.admin-color-80s-kid {
-
-	@include generate-custom-properties(#d13674);
-}

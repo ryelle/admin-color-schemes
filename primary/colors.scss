@@ -1,9 +1,0 @@
-@use "../admin" as * with (
-	$scheme-name: "primary",
-	$base-color: #35395c,
-	$highlight-color: #d8b230,
-	$notification-color: #e46713,
-	$link: #240e73,
-	$link-focus: #a84808,
-	$low-contrast-theme: "true"
-);

@@ -1,0 +1,21 @@
+@use "sass:color";
+@use "admin" with (
+	$scheme-name: "contrast-blue",
+	$base-color: #a5cde8,
+	$text-color: #151923,
+	$icon-color: #151923,
+	$notification-color: #9d2f4d,
+	$highlight-color: #5c98c8,
+	$button-color: #22466d,
+	$link: #22466d,
+	$link-focus: color.adjust(#22466d, $lightness: 10%),
+	$menu-bubble-text: #fff,
+	$menu-highlight-background: #dae9f3,
+	$menu-submenu-text: #151923,
+	$menu-submenu-focus-text: #151923,
+	$menu-submenu-background: #b5d3e8,
+	$form-checked: #9d2f4d
+);
+@use "../custom-props" with ($scheme-name: "contrast-blue",
+	$color-primary: #22466d,
+);

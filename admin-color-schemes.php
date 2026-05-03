@@ -41,7 +41,8 @@ const VERSION = '3.0.0';
  */
 function get_color_url( $color ) {
 	$suffix = is_rtl() ? '-rtl' : '';
-	return plugins_url( "$color/colors$suffix.css?v=" . VERSION, __FILE__ );
+	$ver = false ? VERSION : time();
+	return plugins_url( "dist/$color/colors$suffix.css?v=$ver", __FILE__ );
 }
 
 /**
@@ -206,7 +207,8 @@ function add_editor_themes() {
 		VERSION
 	);
 }
-add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\add_editor_themes' );
+// @todo Check if this is necessary for 6.0, or if colors.css is also loaded in the editor.
+// add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\add_editor_themes' );
 
 /**
  * Add the wordpress version to the body class, in format `wp-XX`.
