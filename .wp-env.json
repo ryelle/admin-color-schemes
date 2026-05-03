@@ -1,5 +1,5 @@
 {
-	"core": "WordPress/WordPress#6.9",
+	"core": "WordPress/WordPress#master",
 	"plugins": [ "." ],
 	"testsEnvironment": false
 }
