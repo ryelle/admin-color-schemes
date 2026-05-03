@@ -1,0 +1,15 @@
+@use "sass:color";
+@use "admin" with (
+	$scheme-name: "modern-aubergine",
+	$base-color: #6e5ec9,
+	$highlight-color: color.adjust(#6e5ec9, $lightness: -15%),
+	$notification-color: #1e1e1e,
+	$menu-submenu-focus-text: #fff,
+	$button-color: #3855e1,
+	$link: #3855e1,
+	$link-focus: color.adjust(#3855e1, $lightness: -10%)
+);
+@use "../custom-props" with (
+	$scheme-name: "modern-aubergine",
+	$color-primary: #6e5ec9,
+);

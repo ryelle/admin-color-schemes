@@ -193,6 +193,18 @@ function add_colors() {
 			'current' => '#fff',
 		)
 	);
+
+	wp_admin_css_color(
+		'modern-aubergine',
+		__( 'Modern Aubergine', 'admin-color-schemes' ),
+		get_color_url( 'modern-aubergine' ),
+		array( '#6e5ec9', '#412991', '#1e1e1e' ),
+		array(
+			'base' => '#f1f3f3',
+			'focus' => '#fff',
+			'current' => '#fff',
+		)
+	);
 }
 add_action( 'admin_init', __NAMESPACE__ . '\add_colors' );
 
