@@ -28,12 +28,21 @@ async function buildTheme( inFile ) {
 		distDir,
 		rel.replace( /\.(scss|sass)$/, '.css' )
 	);
+	const folder = path.join( srcDir, path.dirname( rel ) );
 
-	const sassResult = sass.compile( inFile, {
-		style: 'compressed',
-		sourceMap: false,
-		loadPaths: [ vendorDir ],
-	} );
+	const cssContent = await fs.readFile( inFile, { encoding: 'utf8' } );
+	const globalContent = await fs.readFile(
+		path.join( srcDir, '_back-compat.scss' ),
+		{ encoding: 'utf8' }
+	);
+	const sassResult = await sass.compileStringAsync(
+		`${ cssContent }\n\n${ globalContent }\n`,
+		{
+			style: 'compressed',
+			sourceMap: false,
+			loadPaths: [ vendorDir, folder ],
+		}
+	);
 
 	const postcssResult = await postcss( [
 		autoprefixer,
