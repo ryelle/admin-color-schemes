@@ -1,8 +1,8 @@
 === Admin Color Schemes ===
 Contributors: wordpressdotorg, ryelle, melchoyce, drw158, littlethingsstudio
-Requires at least: 5.7
-Tested up to: 5.9
-Stable tag: 3.0.0
+Requires at least: 6.8
+Tested up to: 7.0
+Stable tag: 4.0.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,12 @@ Color schemes in this pack designed by Kate Whitley, Dave Whitley, Mel Choyce, a
 7. All your awesome color choices
 
 == Changelog ==
+
+4.0.0
+
+* *New scheme* — "Modern Aubergine" theme, a brighter purple option.
+* Updated to support new Admin UI in 7.0.
+* Refactored styles & build process to dynamically pull in core base files, which removes the need to sync in changes.
 
 3.0.0
 
