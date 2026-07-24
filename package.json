@@ -2,16 +2,18 @@
 	"name": "admin-color-schemes",
 	"slug": "admin-color-schemes",
 	"description": "WordPress dashboard color schemes",
-	"version": "3.0.0",
+	"version": "4.0.0",
 	"dependencies": {
+		"@wordpress/hooks": "^4.51.0",
 		"autoprefixer": "^10.5.0",
-		"execa": "^9.6.1",
+		"execa": "^10.0.0",
 		"sass": "^1.98.0",
 		"stylelint": "^16.8.2"
 	},
 	"devDependencies": {
-		"@wordpress/env": "11.5.0",
-		"@wordpress/stylelint-config": "23.37.0"
+		"@wordpress/env": "11.11.0",
+		"@wordpress/scripts": "^33.0.0",
+		"@wordpress/stylelint-config": "24.0.0"
 	},
 	"stylelint": {
 		"extends": [
@@ -27,8 +29,10 @@
 	},
 	"scripts": {
 		"wp-env": "wp-env",
-		"start": "node ./scripts/build.mjs",
-		"build": "node ./scripts/build.mjs",
-		"lint": "stylelint */*.scss"
+		"start": "node ./bin/build.mjs",
+		"prebuild": "wp-scripts build scripts/editor-color-scheme.ts",
+		"build": "node ./bin/build.mjs",
+		"lint:js": "wp-scripts lint-js scripts",
+		"lint:style": "stylelint src/**/*.scss"
 	}
 }
