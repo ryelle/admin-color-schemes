@@ -6,6 +6,7 @@
 	"dependencies": {
 		"@wordpress/hooks": "^4.51.0",
 		"autoprefixer": "^10.5.0",
+		"concurrently": "^10.0.4",
 		"execa": "^10.0.0",
 		"sass": "^1.98.0",
 		"stylelint": "^16.8.2"
@@ -28,10 +29,12 @@
 		]
 	},
 	"scripts": {
+		"start": "concurrently \"npm run start:js\" \"npm run start:style\"",
 		"wp-env": "wp-env",
-		"start": "node ./bin/build.mjs",
-		"prebuild": "wp-scripts build scripts/editor-color-scheme.ts",
-		"build": "node ./bin/build.mjs",
+		"start:js": "wp-scripts start scripts/editor-color-scheme.ts",
+		"start:style": "node ./bin/build.mjs --watch",
+		"build:js": "wp-scripts build scripts/editor-color-scheme.ts",
+		"build:style": "node ./bin/build.mjs",
 		"lint:js": "wp-scripts lint-js scripts",
 		"lint:style": "stylelint src/**/*.scss"
 	}
