@@ -209,18 +209,25 @@ function add_colors() {
 add_action( 'admin_init', __NAMESPACE__ . '\add_colors' );
 
 /**
- * Add our theme custom properties to the editor.
+ * Add the JS plugin to override the admin theme values.
  */
-function add_editor_themes() {
-	wp_enqueue_style(
-		'acs-editor-themes',
-		plugins_url( 'editor.css', __FILE__ ),
-		array(),
-		VERSION
+function add_editor_theme() {
+	$deps_path = __DIR__ . '/build/editor-color-scheme.ts.asset.php';
+
+	if ( ! file_exists( $deps_path ) ) {
+		return;
+	}
+
+	$block_info = require $deps_path;
+
+	wp_enqueue_script(
+		'admin-scheme-editor-script',
+		plugin_dir_url( __FILE__ ) . 'build/editor-color-scheme.ts.js',
+		$block_info['dependencies'],
+		$block_info['version'],
 	);
 }
-// @todo Check if this is necessary for 6.0, or if colors.css is also loaded in the editor.
-// add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\add_editor_themes' );
+add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\add_editor_theme' );
 
 /**
  * Add the wordpress version to the body class, in format `wp-XX`.
