@@ -1,15 +1,14 @@
 @use "admin" with (
 	$scheme-name: "kirk",
-	$base-color: #5f1b29,
-	$highlight-color: #bd3854,
-	$notification-color: #bd3854,
+	$base-color: #4f1f27,
+	$highlight-color: #8b2238,
+	$notification-color: #ad4253,
 	$icon-color: #fefcf7,
 	$menu-highlight-icon: #fefcf7,
 	$menu-bubble-text: #fefcf7,
-	$menu-submenu-background: #340f18,
-	$form-checked: #5f1b29,
+	$menu-submenu-focus-text: #ff8c9a,
 	$link: #666,
-	$link-focus: #bd3854
+	$link-focus: #8b2238
 );
 @use "../custom-props" with (
 	$scheme-name: "kirk",

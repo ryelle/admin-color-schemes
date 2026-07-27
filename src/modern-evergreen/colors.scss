@@ -1,13 +1,12 @@
 @use "sass:color";
 @use "admin" with (
 	$scheme-name: "modern-evergreen",
-	$base-color: #1e8060,
-	$highlight-color: color.adjust(#1e8060, $lightness: -15%),
-	$notification-color: #1e1e1e,
+	$base-color: #265843,
+	$highlight-color: color.adjust(#265843, $lightness: -15%),
+	$notification-color: #1d1d24,
 	$menu-submenu-focus-text: #fff,
-	$button-color: #3855e1,
-	$link: #3855e1,
-	$link-focus: color.adjust(#3855e1, $lightness: -10%)
+	$link: #265843,
+	$link-focus: #48705d,
 );
 @use "../custom-props" with (
 	$scheme-name: "modern-evergreen",

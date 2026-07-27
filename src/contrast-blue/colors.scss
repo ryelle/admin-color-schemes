@@ -1,21 +1,62 @@
 @use "sass:color";
 @use "admin" with (
 	$scheme-name: "contrast-blue",
-	$base-color: #a5cde8,
-	$text-color: #151923,
-	$icon-color: #151923,
+	$base-color: #b2dcf6,
+	$text-color: #001e41,
+	$icon-color: #001e41,
 	$notification-color: #9d2f4d,
-	$highlight-color: #5c98c8,
+	$highlight-color: #96c1dd,
 	$button-color: #22466d,
 	$link: #22466d,
 	$link-focus: color.adjust(#22466d, $lightness: 10%),
 	$menu-bubble-text: #fff,
-	$menu-highlight-background: #dae9f3,
-	$menu-submenu-text: #151923,
-	$menu-submenu-focus-text: #151923,
-	$menu-submenu-background: #b5d3e8,
-	$form-checked: #9d2f4d
+	$menu-highlight-background: #96c1dd,
+	$menu-submenu-text: #001e41,
+	$menu-submenu-focus-text: #001e41,
+	$menu-submenu-background: #d0eafc
 );
 @use "../custom-props" with ($scheme-name: "contrast-blue",
 	$color-primary: #22466d,
 );
+
+/**
+ * Add underlines for extra contrast.
+ */
+
+#adminmenu .wp-submenu a,
+#adminmenu .wp-has-current-submenu .wp-submenu a,
+.folded #adminmenu .wp-has-current-submenu .wp-submenu a,
+#adminmenu a.wp-has-current-submenu:focus + .wp-submenu a,
+#adminmenu .wp-has-current-submenu.opensub .wp-submenu a {
+
+	&:focus,
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+#adminmenu .wp-submenu li.current a,
+#adminmenu a.wp-has-current-submenu:focus + .wp-submenu li.current a,
+#adminmenu .wp-has-current-submenu.opensub .wp-submenu li.current a {
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}
+
+#wpadminbar .quicklinks .menupop ul li a:hover,
+#wpadminbar .quicklinks .menupop ul li a:focus,
+#wpadminbar .quicklinks .menupop ul li a:hover strong,
+#wpadminbar .quicklinks .menupop ul li a:focus strong,
+#wpadminbar .quicklinks .ab-sub-wrapper .menupop.hover > a,
+#wpadminbar .quicklinks .menupop.hover ul li a:hover,
+#wpadminbar .quicklinks .menupop.hover ul li a:focus,
+#wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover,
+#wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus,
+#wpadminbar .quicklinks li a:hover .blavatar,
+#wpadminbar .quicklinks li a:focus .blavatar,
+#wpadminbar .quicklinks .ab-sub-wrapper .menupop.hover > a .blavatar,
+#wpadminbar #wp-admin-bar-user-info a:hover .display-name {
+	text-decoration: underline;
+}

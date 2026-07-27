@@ -1,13 +1,14 @@
 @use "admin" with (
 	$scheme-name: "cruise",
-	$base-color: #36395c,
-	$highlight-color: #79b591,
+	$base-color: #303262,
+	$highlight-color: #348259,
 	$notification-color: #cda200,
-	$link: #4f56a9,
-	$link-focus: #36395c,
-	$low-contrast-theme: "true"
+	$link: #494d88,
+	$link-focus: #2b7a52,
+	$low-contrast-theme: "true",
+	$menu-submenu-focus-text: #7bc89b,
 );
 @use "../custom-props" with (
 	$scheme-name: "cruise",
-	$color-primary: #4f56a9,
+	$color-primary: #348259,
 );

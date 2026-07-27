@@ -1,11 +1,12 @@
 @use "admin" with (
 	$scheme-name: "flat",
-	$base-color: #2c3e50,
-	$highlight-color: #1abc9c,
-	$notification-color: #d35401,
+	$base-color: #213950,
+	$highlight-color: #11919e,
+	$notification-color: #c04200,
 	$link: #00806b,
 	$link-focus: #2c3e50,
-	$low-contrast-theme: "true"
+	$low-contrast-theme: "true",
+	$menu-submenu-focus-text: #61c6d3,
 );
 @use "../custom-props" with (
 	$scheme-name: "flat",

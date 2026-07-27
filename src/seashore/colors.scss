@@ -1,18 +1,18 @@
 @use "sass:color";
 @use "admin" with (
 	$scheme-name: "seashore",
-	$base-color: color.adjust(#ece2ba, $saturation: -25%),
-	$text-color: color.adjust(#73340f, $saturation: -50%),
-	$icon-color: color.adjust(#73340f, $saturation: -50%),
-	$highlight-color: #456a7f,
-	$notification-color: #456a7f,
-	$body-background: color.adjust(color.adjust(#ece2ba, $saturation: -25%), $lightness: 13%),
-	$menu-highlight-text: color.adjust(color.adjust(#ece2ba, $saturation: -25%), $lightness: 13%),
-	$menu-highlight-icon: color.adjust(color.adjust(#ece2ba, $saturation: -25%), $lightness: 13%),
-	$menu-bubble-text: color.adjust(color.adjust(#ece2ba, $saturation: -25%), $lightness: 13%),
+	$base-color: #eee5d6,
+	$text-color: #4c4841,
+	$icon-color: #4c4841,
+	$highlight-color: #d9c8aa,
+	$notification-color: #2a4f63,
+	$body-background: #f9f7f0,
+	$menu-bubble-text: #ece1ce,
 	$menu-collapse-focus-icon: #456a7f,
 	$link: #456a7f,
-	$link-focus: color.adjust(#73340f, $saturation: -50%)
+	$link-focus: #696764,
+	$menu-submenu-text: #4c4841,
+	$menu-submenu-focus-text: #506a84
 );
 @use "../custom-props" with (
 	$scheme-name: "seashore",

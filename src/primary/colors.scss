@@ -1,13 +1,14 @@
 @use "admin" with (
 	$scheme-name: "primary",
-	$base-color: #35395c,
-	$highlight-color: #d8b230,
-	$notification-color: #e46713,
-	$link: #240e73,
-	$link-focus: #a84808,
-	$low-contrast-theme: "true"
+	$base-color: #2f3261,
+	$highlight-color: #d4980d,
+	$notification-color: #bf4500,
+	$link: #3c4065,
+	$link-focus: #bf4500,
+	$low-contrast-theme: "true",
+	$menu-submenu-focus-text: #e4b903
 );
 @use "../custom-props" with (
 	$scheme-name: "primary",
-	$color-primary: #303179,
+	$color-primary: #bf4500,
 );

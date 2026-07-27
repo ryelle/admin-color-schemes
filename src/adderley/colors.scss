@@ -1,18 +1,17 @@
 
 @use "admin" with (
 	$scheme-name: "adderley",
-	$base-color: #216bce,
-	$highlight-color: #1730e5,
+	$base-color: #154d9b,
+	$highlight-color: #2d60ab,
 	$notification-color: #bde7f0,
 	$menu-submenu-focus-text: #bde7f0,
-	$menu-bubble-text: #216bce,
-	$form-checked: #216bce,
-	$link: #1730e5,
-	$link-focus: #216bce,
+	$menu-bubble-text: #385c91,
+	$link: #2d60ab,
+	$link-focus: #46689c,
 );
 @use "../custom-props" with (
 	$scheme-name: "adderley",
-	$color-primary: #1730e5,
+	$color-primary: #154d9b,
 );
 
 /**

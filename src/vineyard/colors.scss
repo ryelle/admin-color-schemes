@@ -1,13 +1,13 @@
 @use "admin" with (
 	$scheme-name: "vineyard",
-	$base-color: #462b36,
-	$highlight-color: #cc9e14,
-	$notification-color: #ba8752,
+	$base-color: #432531,
+	$highlight-color: #934f69,
+	$notification-color: #ab7844,
 	$link: #7d2f4f,
-	$link-focus: #9e7806,
-	$low-contrast-theme: "true"
+	$link-focus: #ab7844,
+	$menu-submenu-focus-text: #ffe9c6
 );
 @use "../custom-props" with (
-	$scheme-name: "vineyard",
-	$color-primary: #72324c,
+	$scheme-name: "vinyard",
+	$color-primary: #934f69,
 );

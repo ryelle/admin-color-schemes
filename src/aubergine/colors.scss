@@ -1,13 +1,14 @@
 @use "admin" with (
 	$scheme-name: "aubergine",
-	$base-color: #5c5b73,
-	$highlight-color: #c99416,
+	$base-color: #463c7e,
+	$highlight-color: #c5900d,
 	$notification-color: #ba5b32,
-	$link: #353354,
+	$link: #574d97,
 	$link-focus: #ba5b32,
-	$low-contrast-theme: "true"
+	$low-contrast-theme: "true",
+	$menu-submenu-focus-text: #eab444,
 );
 @use "../custom-props" with (
 	$scheme-name: "aubergine",
-	$color-primary: #534e80,
+	$color-primary: #ba5b32,
 );
